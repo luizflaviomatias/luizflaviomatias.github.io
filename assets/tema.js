@@ -15,6 +15,8 @@
   }
   function atualizarBotao(botao) {
     const escuro = temaEfetivo() === "dark";
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", escuro ? "#070d1c" : "#1d4ed8");
     botao.textContent = escuro ? "☀" : "☾";
     botao.setAttribute("aria-label", escuro ? "Usar tema claro" : "Usar tema escuro");
   }
