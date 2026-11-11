@@ -102,6 +102,14 @@ img { max-width: 100%; }
 .theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
 body { transition: background-color .25s, color .25s; }
 
+/* Seletor de idioma */
+.top-actions { display: flex; align-items: center; gap: 10px; }
+.lang-switch { display: flex; align-items: center; gap: 4px; padding: 3px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); }
+.lang-switch a { display: grid; place-items: center; width: 34px; height: 30px; border-radius: 999px; opacity: .55; transition: opacity .2s, background-color .2s; }
+.lang-switch a:hover { opacity: 1; }
+.lang-switch a[aria-current="true"] { opacity: 1; background: var(--accent-soft); }
+.lang-switch img { width: 22px; height: 15px; border-radius: 3px; box-shadow: 0 0 0 1px rgba(0,0,0,.12); display: block; }
+
 /* Hero */
 .hero { padding-top: 64px; padding-bottom: 48px; position: relative; }
 .hero::before {
