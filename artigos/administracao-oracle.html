@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6 perguntas de administração Oracle — Luiz Flávio Matias</title>
+  <meta name="description" content="Backup testado, plano de contingência, AWR, estatísticas, patches e menor privilégio: o básico de administração Oracle que evita os incidentes mais caros.">
+  <link rel="canonical" href="https://luizflaviomatias.github.io/artigos/administracao-oracle.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="6 perguntas de administração Oracle que todo time deveria responder">
+  <meta property="og:description" content="O sistema não caiu por causa do código. Caiu porque ninguém tinha testado o restore.">
+  <meta name="theme-color" content="#1f3864">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/tema.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="../index.html">Luiz Flávio <span>Matias</span></a>
+      <button class="theme-toggle" type="button" aria-label="Alternar tema">☾</button>
+    </div>
+  </header>
+
+  <main class="article">
+    <a class="back" href="../index.html#artigos">← Voltar</a>
+    <p class="eyebrow" style="margin-top:24px">Oracle · Operação</p>
+    <h1>6 perguntas de administração Oracle que todo time deveria responder antes de um release</h1>
+    <p class="byline">Luiz Flávio Matias · novembro de 2026 · 5 min de leitura</p>
+
+    <blockquote>O sistema não caiu por causa do código. Caiu porque ninguém tinha testado o restore.</blockquote>
+
+    <p>Em 15 anos trabalhando com sistemas críticos em Oracle — seguros, telecom, banco e e-commerce — aprendi que a maior parte dos incidentes graves não nasce de um bug sofisticado. Nasce de algo básico de administração de banco que ficou para depois.</p>
+    <p>Se você é dev, tech lead ou gestor de um time que depende de Oracle, estas são as perguntas que eu faria antes de qualquer release importante.</p>
+
+    <h2>1. Quando foi o último restore testado?</h2>
+    <p>Backup que nunca foi restaurado é só uma esperança. O RMAN pode rodar todo dia sem erro e, ainda assim, o restore falhar por falta de um archive log, por um catálogo desatualizado ou por um tempo de recuperação que ninguém mediu. Teste o restore completo em outro ambiente, cronometre e compare com o RTO (tempo máximo de indisponibilidade) que o negócio espera.</p>
+
+    <h2>2. Existe plano para perder o servidor inteiro?</h2>
+    <p>Ter Data Guard — ou outra forma de réplica — configurado não basta. O switchover já foi ensaiado? O failover está documentado num runbook que alguém consegue executar às 3h da manhã sem o especialista online? Qual é a perda de dados aceitável (RPO) e ela bate com o modo de proteção configurado?</p>
+
+    <h2>3. Performance está sendo medida ou adivinhada?</h2>
+    <p>Antes de culpar "o banco", olhe o AWR e o ASH: quais SQLs consomem mais tempo, quais eventos de espera dominam e o que mudou desde a última semana boa. Guardar um relatório de referência de um período saudável transforma a discussão de opinião em comparação.</p>
+
+    <h2>4. As estatísticas acompanham o volume?</h2>
+    <p>Uma carga grande, uma tabela que dobrou de tamanho, e o otimizador passa a escolher o caminho errado. Coleta de estatísticas faz parte do processo de deploy e das cargas em lote — não é uma tarefa esquecida no job noturno padrão.</p>
+
+    <h2>5. Patch e upgrade têm calendário?</h2>
+    <p>Ficar anos sem aplicar Release Updates é acumular risco de segurança e de suporte. Com o 19c em suporte estendido e o 23ai já disponível, a pergunta não é "se", é "quando e com qual janela de teste". Ambiente de homologação com dados representativos é o que torna isso possível sem medo.</p>
+
+    <h2>6. A aplicação segue o menor privilégio?</h2>
+    <p>Aplicação conectando como dono do schema, senha em arquivo de configuração e usuário genérico compartilhado são convites para incidente — e para problema de LGPD. Usuário de aplicação com permissões mínimas, segredos em cofre e auditoria nas operações sensíveis são o piso, não o luxo.</p>
+
+    <h2>O que mais vejo dar certo</h2>
+    <p>DBA, desenvolvimento e operação olhando para os mesmos indicadores. Eles cabem num painel simples:</p>
+    <table>
+      <thead><tr><th>Indicador</th><th>Pergunta que responde</th></tr></thead>
+      <tbody>
+        <tr><td>Tempo do último restore testado</td><td>Conseguimos voltar dentro do RTO?</td></tr>
+        <tr><td>Data do último switchover ensaiado</td><td>A contingência funciona de verdade?</td></tr>
+        <tr><td>Tempo de resposta dos SQLs críticos</td><td>A performance está piorando aos poucos?</td></tr>
+        <tr><td>Idade do último Release Update aplicado</td><td>Quanto risco estamos acumulando?</td></tr>
+        <tr><td>Lead Time e taxa de incidentes</td><td>Estamos entregando com previsibilidade?</td></tr>
+      </tbody>
+    </table>
+    <p>Banco de dados não é infraestrutura "de outro time". É parte do produto.</p>
+    <p><strong>E no seu time: qual dessas perguntas ainda está "para depois"?</strong> Me conta no <a href="https://www.linkedin.com/in/luizflaviomatias" target="_blank" rel="noopener">LinkedIn</a>.</p>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 Luiz Flávio Matias dos Santos</span>
+      <a href="../index.html">luizflaviomatias.github.io</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+// Alterna o tema claro/escuro e lembra a escolha do visitante (falha silenciosamente sem storage).
+(function () {
+  const raiz = document.documentElement;
+  const CHAVE = "tema";
+
+  function ler() {
+    try { return localStorage.getItem(CHAVE); } catch (e) { return null; }
+  }
+  function gravar(valor) {
+    try { localStorage.setItem(CHAVE, valor); } catch (e) { /* sem persistência */ }
+  }
+  function temaEfetivo() {
+    if (raiz.dataset.theme) return raiz.dataset.theme;
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  function atualizarBotao(botao) {
+    const escuro = temaEfetivo() === "dark";
+    botao.textContent = escuro ? "☀" : "☾";
+    botao.setAttribute("aria-label", escuro ? "Usar tema claro" : "Usar tema escuro");
+  }
+
+  const salvo = ler();
+  if (salvo === "dark" || salvo === "light") raiz.dataset.theme = salvo;
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const botao = document.querySelector(".theme-toggle");
+    if (!botao) return;
+    atualizarBotao(botao);
+    botao.addEventListener("click", function () {
+      const novo = temaEfetivo() === "dark" ? "light" : "dark";
+      raiz.dataset.theme = novo;
+      gravar(novo);
+      atualizarBotao(botao);
+    });
+  });
+})();
