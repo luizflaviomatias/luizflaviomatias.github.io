@@ -1,20 +1,28 @@
-// Carrossel da seção de experiência: setas, bolinhas e teclado sobre uma lista com rolagem horizontal (scroll-snap).
-// Sem este script a lista continua navegável arrastando ou rolando para o lado.
+// Caixa da seção de experiência com rolagem vertical: botões ↑ ↓, bolinhas e teclado.
+// Sem este script a caixa continua rolando normalmente.
 (function () {
   var IDIOMA = (document.documentElement.lang || "pt").slice(0, 2);
   var R = {
-    pt: { ant: "Experiência anterior", prox: "Próxima experiência", ir: "Ir para a experiência " },
-    en: { ant: "Previous role", prox: "Next role", ir: "Go to role " },
-    es: { ant: "Experiencia anterior", prox: "Siguiente experiencia", ir: "Ir a la experiencia " }
-  }[IDIOMA] || null;
-  if (!R) R = { ant: "Anterior", prox: "Próxima", ir: "Ir para " };
+    pt: { sobe: "Experiência anterior", desce: "Próxima experiência", ir: "Ir para a experiência " },
+    en: { sobe: "Previous role", desce: "Next role", ir: "Go to role " },
+    es: { sobe: "Experiencia anterior", desce: "Siguiente experiencia", ir: "Ir a la experiencia " }
+  }[IDIOMA] || { sobe: "Anterior", desce: "Próxima", ir: "Ir para " };
 
   function montar(raiz) {
     var trilho = raiz.querySelector(".slides");
     if (!trilho) return;
-    var slides = trilho.children;
-    var total = slides.length;
+    var itens = trilho.children;
+    var total = itens.length;
     if (total < 2) return;
+
+    function botao(texto, rotulo, classe) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.textContent = texto;
+      b.setAttribute("aria-label", rotulo);
+      if (classe) b.className = classe;
+      return b;
+    }
 
     var controles = document.createElement("div");
     controles.className = "slider-controls";
@@ -22,18 +30,10 @@
     pontos.className = "slider-dots";
     var setas = document.createElement("div");
     setas.className = "slider-arrows";
-
-    function botao(texto, rotulo) {
-      var b = document.createElement("button");
-      b.type = "button";
-      b.textContent = texto;
-      b.setAttribute("aria-label", rotulo);
-      return b;
-    }
-    var anterior = botao("←", R.ant);
-    var proximo = botao("→", R.prox);
-    setas.appendChild(anterior);
-    setas.appendChild(proximo);
+    var sobe = botao("↑", R.sobe, "sobe");
+    var desce = botao("↓", R.desce, "desce");
+    setas.appendChild(sobe);
+    setas.appendChild(desce);
 
     var bolinhas = [];
     for (var i = 0; i < total; i++) {
@@ -48,45 +48,50 @@
     controles.appendChild(setas);
     raiz.appendChild(controles);
 
-    function passo() {
-      return slides.length > 1 ? slides[1].offsetLeft - slides[0].offsetLeft : trilho.clientWidth;
-    }
-    function porTela() {
-      return Math.max(1, Math.round(trilho.clientWidth / passo()));
-    }
+    // Posição de cada item dentro da caixa (os cartões têm alturas diferentes).
+    function topo(n) { return itens[n].offsetTop - itens[0].offsetTop; }
+    function maxScroll() { return trilho.scrollHeight - trilho.clientHeight; }
     function atual() {
-      return Math.round(trilho.scrollLeft / passo());
-    }
-    // Durante a animação o scroll ainda não chegou ao destino; cliques seguidos partem do alvo, não da posição atual.
-    var alvo = 0, ultimoClique = 0;
-    function base() {
-      return Date.now() - ultimoClique < 700 ? alvo : atual();
-    }
-    function irPara(n) {
-      var max = total - porTela();
-      n = Math.max(0, Math.min(n, max));
-      alvo = n;
-      ultimoClique = Date.now();
-      trilho.scrollLeft = n * passo();
-      if (trilho.scrollTo) trilho.scrollTo({ left: n * passo(), behavior: "smooth" });
-    }
-    function atualizar() {
-      var a = atual();
-      var visiveis = porTela();
-      var fim = trilho.scrollLeft + trilho.clientWidth >= trilho.scrollWidth - 4;
-      for (var i = 0; i < bolinhas.length; i++) {
-        var ativo = i >= a && i < a + visiveis;
-        bolinhas[i].setAttribute("aria-current", ativo ? "true" : "false");
+      var y = trilho.scrollTop;
+      if (y >= maxScroll() - 4) return total - 1;
+      var melhor = 0;
+      for (var i = 0; i < total; i++) {
+        if (Math.abs(topo(i) - y) < Math.abs(topo(melhor) - y)) melhor = i;
       }
-      anterior.disabled = trilho.scrollLeft <= 4;
-      proximo.disabled = fim;
+      return melhor;
     }
 
-    anterior.addEventListener("click", function () { irPara(base() - 1); });
-    proximo.addEventListener("click", function () { irPara(base() + 1); });
+    // Cliques seguidos durante a animação partem do destino, não da posição intermediária.
+    var alvo = 0, ultimoClique = 0;
+    function base() { return Date.now() - ultimoClique < 700 ? alvo : atual(); }
+    function irPara(n) {
+      n = Math.max(0, Math.min(n, total - 1));
+      alvo = n;
+      ultimoClique = Date.now();
+      var y = Math.min(topo(n), maxScroll());
+      if (trilho.scrollTo) trilho.scrollTo({ top: y, behavior: "smooth" });
+      else trilho.scrollTop = y;
+    }
+
+    function atualizar() {
+      var a = atual();
+      var y = trilho.scrollTop;
+      var noTopo = y <= 4;
+      var noFim = y >= maxScroll() - 4;
+      for (var i = 0; i < bolinhas.length; i++) {
+        bolinhas[i].setAttribute("aria-current", i === a ? "true" : "false");
+      }
+      sobe.disabled = noTopo;
+      desce.disabled = noFim;
+      if (noTopo) raiz.classList.remove("tem-acima"); else raiz.classList.add("tem-acima");
+      if (noFim) raiz.classList.remove("tem-abaixo"); else raiz.classList.add("tem-abaixo");
+    }
+
+    sobe.addEventListener("click", function () { irPara(base() - 1); });
+    desce.addEventListener("click", function () { irPara(base() + 1); });
     trilho.addEventListener("keydown", function (e) {
-      if (e.key === "ArrowRight" || e.key === "Right") { e.preventDefault(); irPara(base() + 1); }
-      if (e.key === "ArrowLeft" || e.key === "Left") { e.preventDefault(); irPara(base() - 1); }
+      if (e.key === "ArrowDown" || e.key === "Down") { e.preventDefault(); irPara(base() + 1); }
+      if (e.key === "ArrowUp" || e.key === "Up") { e.preventDefault(); irPara(base() - 1); }
     });
     var agendado = false;
     trilho.addEventListener("scroll", function () {
