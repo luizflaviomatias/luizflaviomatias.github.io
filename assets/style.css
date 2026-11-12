@@ -203,17 +203,54 @@ h2 { font-size: 28px; font-size: clamp(26px, 4vw, 34px); letter-spacing: -.02em;
 #entregas .card:hover { transform: translateY(-2px); border-color: var(--green); }
 
 /* Trajetória */
-.timeline { list-style: none; margin: 0; padding: 0; position: relative; }
-.timeline::before { content: ""; position: absolute; left: 7px; top: 6px; bottom: 6px; width: 2px; background: var(--border); }
-.timeline li { position: relative; padding: 0 0 28px 34px; }
-.timeline li::before {
-  content: ""; position: absolute; left: 0; top: 6px; width: 16px; height: 16px; border-radius: 50%;
-  background: var(--surface); border: 3px solid var(--accent);
+/* Experiência em slides: arrasta no celular, setas e bolinhas no computador.
+   Sem JavaScript continua funcionando com rolagem horizontal. */
+.slider { position: relative; }
+.slides {
+  display: flex; gap: 16px; margin: 0; padding: 4px 2px 16px; list-style: none;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory; scroll-behavior: smooth;
+  scrollbar-width: none; -ms-overflow-style: none;
 }
-.timeline .when { font-size: 13px; color: var(--muted); font-weight: 600; }
-.timeline h3 { margin: 2px 0 2px; font-size: 17px; }
-.timeline .where { color: var(--accent); font-weight: 600; font-size: 15px; }
-.timeline p { margin: 6px 0 0; color: var(--muted); font-size: 15px; max-width: 760px; }
+.slides::-webkit-scrollbar { display: none; }
+.slides:focus-visible { outline-offset: 4px; }
+.slides > li {
+  flex: 0 0 100%; min-width: 0; scroll-snap-align: start;
+  display: flex; flex-direction: column; gap: 10px;
+  background: var(--surface); border: 1px solid var(--border); border-top: 4px solid var(--accent);
+  border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  min-height: 260px;
+}
+.slides > li:nth-child(even) { border-top-color: var(--green); }
+@media (max-width: 859.98px) { .slides > li { flex-basis: 88%; } }
+@media (min-width: 860px) { .slides > li { flex-basis: calc(50% - 8px); padding: 28px; } }
+.slides .slide-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.slides .when {
+  display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: .01em;
+  color: var(--accent-2); background: var(--green-soft); border: 1px solid var(--green-border);
+  border-radius: 999px; padding: 4px 12px;
+}
+.slides .num { font-size: 13px; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
+.slides h3 { margin: 6px 0 0; font-size: 20px; line-height: 1.3; letter-spacing: -.01em; }
+.slides .where { color: var(--accent); font-weight: 600; font-size: 15px; }
+.slides p { margin: 4px 0 0; color: var(--muted); font-size: 15px; }
+
+.slider-controls { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 8px; }
+.slider-dots { display: flex; flex-wrap: wrap; gap: 8px; }
+.slider-dots button {
+  width: 10px; height: 10px; padding: 0; border: 0; border-radius: 999px; cursor: pointer;
+  background: var(--border); transition: width .25s, background-color .25s;
+}
+.slider-dots button[aria-current="true"] { width: 28px; background: var(--accent); }
+.slider-arrows { display: flex; gap: 8px; }
+.slider-arrows button {
+  width: 44px; height: 44px; border-radius: 999px; cursor: pointer; font-size: 18px; line-height: 1;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  transition: border-color .2s, color .2s, opacity .2s;
+}
+.slider-arrows button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.slider-arrows button:disabled { opacity: .35; cursor: default; }
+@media (prefers-reduced-motion: reduce) { .slides { scroll-behavior: auto; } }
 
 /* Competências */
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
