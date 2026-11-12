@@ -1,43 +1,78 @@
-// Alterna o tema claro/escuro e lembra a escolha do visitante (falha silenciosamente sem storage).
+// Tema claro/escuro (claro é o padrão) e menu para celular/tablet.
+// Lembra a escolha do visitante quando o navegador permite; sem storage, falha em silêncio.
 (function () {
-  const raiz = document.documentElement;
-  const CHAVE = "tema";
+  var raiz = document.documentElement;
+  var CHAVE = "tema";
+  var IDIOMA = (raiz.lang || "pt").slice(0, 2);
+  var ROTULOS = {
+    pt: { claro: "Usar tema claro", escuro: "Usar tema escuro", abrir: "Abrir menu", fechar: "Fechar menu" },
+    en: { claro: "Switch to light theme", escuro: "Switch to dark theme", abrir: "Open menu", fechar: "Close menu" },
+    es: { claro: "Usar tema claro", escuro: "Usar tema oscuro", abrir: "Abrir menú", fechar: "Cerrar menú" }
+  };
+  var R = ROTULOS[IDIOMA] || ROTULOS.pt;
 
   function ler() {
-    try { return localStorage.getItem(CHAVE); } catch (e) { return null; }
+    try { return window.localStorage.getItem(CHAVE); } catch (e) { return null; }
   }
   function gravar(valor) {
-    try { localStorage.setItem(CHAVE, valor); } catch (e) { /* sem persistência */ }
+    try { window.localStorage.setItem(CHAVE, valor); } catch (e) { /* sem persistência */ }
   }
   function temaEfetivo() {
-    if (raiz.dataset.theme) return raiz.dataset.theme;
-    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    return raiz.getAttribute("data-theme") === "dark" ? "dark" : "light";
+  }
+  function aplicar(tema) {
+    raiz.setAttribute("data-theme", tema);
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", tema === "dark" ? "#070d1c" : "#1d4ed8");
   }
   function atualizarBotao(botao) {
-    const escuro = temaEfetivo() === "dark";
-    const meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute("content", escuro ? "#070d1c" : "#1d4ed8");
+    var escuro = temaEfetivo() === "dark";
     botao.textContent = escuro ? "☀" : "☾";
-    const rotulos = {
-      pt: ["Usar tema claro", "Usar tema escuro"],
-      en: ["Switch to light theme", "Switch to dark theme"],
-      es: ["Usar tema claro", "Usar tema oscuro"]
-    }[(raiz.lang || "pt").slice(0, 2)] || ["Usar tema claro", "Usar tema escuro"];
-    botao.setAttribute("aria-label", escuro ? rotulos[0] : rotulos[1]);
+    botao.setAttribute("aria-label", escuro ? R.claro : R.escuro);
   }
 
-  const salvo = ler();
-  if (salvo === "dark" || salvo === "light") raiz.dataset.theme = salvo;
+  // Só fica escuro se o visitante escolheu antes; caso contrário, claro.
+  aplicar(ler() === "dark" ? "dark" : "light");
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const botao = document.querySelector(".theme-toggle");
-    if (!botao) return;
-    atualizarBotao(botao);
-    botao.addEventListener("click", function () {
-      const novo = temaEfetivo() === "dark" ? "light" : "dark";
-      raiz.dataset.theme = novo;
-      gravar(novo);
+  function iniciar() {
+    var botao = document.querySelector(".theme-toggle");
+    if (botao) {
       atualizarBotao(botao);
+      botao.addEventListener("click", function () {
+        var novo = temaEfetivo() === "dark" ? "light" : "dark";
+        aplicar(novo);
+        gravar(novo);
+        atualizarBotao(botao);
+      });
+    }
+
+    var topo = document.querySelector(".topbar");
+    var menu = document.querySelector(".menu-toggle");
+    var nav = document.getElementById("menu-principal");
+    if (!topo || !menu || !nav) return;
+
+    function definirMenu(aberto) {
+      if (aberto) topo.classList.add("menu-aberto"); else topo.classList.remove("menu-aberto");
+      menu.setAttribute("aria-expanded", aberto ? "true" : "false");
+      menu.setAttribute("aria-label", aberto ? R.fechar : R.abrir);
+    }
+    menu.addEventListener("click", function () {
+      definirMenu(!topo.classList.contains("menu-aberto"));
     });
-  });
+    nav.addEventListener("click", function (e) {
+      if (e.target && e.target.tagName === "A") definirMenu(false);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" || e.key === "Esc") definirMenu(false);
+    });
+    document.addEventListener("click", function (e) {
+      if (!topo.contains(e.target)) definirMenu(false);
+    });
+    window.addEventListener("resize", function () {
+      if (window.innerWidth >= 860) definirMenu(false);
+    });
+  }
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciar);
+  else iniciar();
 })();
