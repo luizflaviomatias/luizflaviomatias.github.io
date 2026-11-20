@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="../assets/style.css">
   <script src="../assets/tema.js"></script>
   <script src="../assets/projetos.js" defer></script>
-  <script src="../assets/slider.js" defer></script>
+  <script src="../assets/acordeao.js" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -125,54 +125,113 @@
       <div class="container">
         <p class="eyebrow">Experience</p>
         <h2>Career</h2>
-        <div class="slider" data-slider>
-        <div class="slider-janela">
-        <ol class="slides" tabindex="0" aria-label="Work experience">
-          <li>
-            <div class="slide-top"><span class="when">Jun 2025 — present</span><span class="num" aria-hidden="true">01 / 07</span></div>
-            <h3>Systems Analyst — Java/Spring Batch and Cybersecurity Process Management</h3>
-            <span class="where">NAVA — Technology for Business</span>
-            <p>Systems analysis and backend development in foreign trade squads; batch processing in Java/Spring Batch; API integrations; cybersecurity process management.</p>
+        <ol class="acordeao" data-acordeao aria-label="Work experience">
+          <li class="exp">
+            <h3 class="exp-cabeca">
+              <button type="button" class="exp-botao" aria-expanded="false" aria-controls="exp-1">
+                <span class="exp-empresa">NAVA — Technology for Business</span>
+                <span class="exp-anos">2025 – present</span>
+                <span class="exp-seta" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="exp-painel" id="exp-1">
+              <div class="exp-conteudo">
+                <p class="exp-cargo">Systems Analyst — Java/Spring Batch and Cybersecurity Process Management</p>
+                <p>Systems analysis and backend development in foreign trade squads; batch processing in Java/Spring Batch; API integrations; cybersecurity process management.</p>
+              </div>
+            </div>
           </li>
-          <li>
-            <div class="slide-top"><span class="when">Sep 2021 — May 2025</span><span class="num" aria-hidden="true">02 / 07</span></div>
-            <h3>Senior Systems Architect</h3>
-            <span class="where">Minsait (client: Vivo)</span>
-            <p>Delivery planning for telecom infrastructure (3G to 5G), TMF standards and SOA/microservices to reduce technical debt, living architecture documentation.</p>
+          <li class="exp">
+            <h3 class="exp-cabeca">
+              <button type="button" class="exp-botao" aria-expanded="false" aria-controls="exp-2">
+                <span class="exp-empresa">Minsait (client: Vivo)</span>
+                <span class="exp-anos">2021 – 2025</span>
+                <span class="exp-seta" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="exp-painel" id="exp-2">
+              <div class="exp-conteudo">
+                <p class="exp-cargo">Senior Systems Architect</p>
+                <p>Delivery planning for telecom infrastructure (3G to 5G), TMF standards and SOA/microservices to reduce technical debt, living architecture documentation.</p>
+              </div>
+            </div>
           </li>
-          <li>
-            <div class="slide-top"><span class="when">Feb 2021 — Sep 2021</span><span class="num" aria-hidden="true">03 / 07</span></div>
-            <h3>Application Development Associate Manager</h3>
-            <span class="where">Accenture (client: Santander)</span>
-            <p>Led a 6-person cross-functional team, productivity metrics and continuous feedback, Scrum and Kanban for digital services.</p>
+          <li class="exp">
+            <h3 class="exp-cabeca">
+              <button type="button" class="exp-botao" aria-expanded="false" aria-controls="exp-3">
+                <span class="exp-empresa">Accenture (client: Santander)</span>
+                <span class="exp-anos">2021 – 2021</span>
+                <span class="exp-seta" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="exp-painel" id="exp-3">
+              <div class="exp-conteudo">
+                <p class="exp-cargo">Application Development Associate Manager</p>
+                <p>Led a 6-person cross-functional team, productivity metrics and continuous feedback, Scrum and Kanban for digital services.</p>
+              </div>
+            </div>
           </li>
-          <li>
-            <div class="slide-top"><span class="when">Mar 2020 — Jan 2021</span><span class="num" aria-hidden="true">04 / 07</span></div>
-            <h3>Senior Systems Analyst / Solutions Architect</h3>
-            <span class="where">Indra</span>
-            <p>Evolutionary architectures with Java and Oracle; incident management and documentation as a collaborative process.</p>
+          <li class="exp">
+            <h3 class="exp-cabeca">
+              <button type="button" class="exp-botao" aria-expanded="false" aria-controls="exp-4">
+                <span class="exp-empresa">Indra</span>
+                <span class="exp-anos">2020 – 2021</span>
+                <span class="exp-seta" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="exp-painel" id="exp-4">
+              <div class="exp-conteudo">
+                <p class="exp-cargo">Senior Systems Analyst / Solutions Architect</p>
+                <p>Evolutionary architectures with Java and Oracle; incident management and documentation as a collaborative process.</p>
+              </div>
+            </div>
           </li>
-          <li>
-            <div class="slide-top"><span class="when">Oct 2014 — May 2019</span><span class="num" aria-hidden="true">05 / 07</span></div>
-            <h3>Systems Analyst</h3>
-            <span class="where">B2W Digital</span>
-            <p>Moved inventory and pricing systems from database processing to messaging; automated marketplace business rules.</p>
+          <li class="exp">
+            <h3 class="exp-cabeca">
+              <button type="button" class="exp-botao" aria-expanded="false" aria-controls="exp-5">
+                <span class="exp-empresa">B2W Digital</span>
+                <span class="exp-anos">2014 – 2019</span>
+                <span class="exp-seta" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="exp-painel" id="exp-5">
+              <div class="exp-conteudo">
+                <p class="exp-cargo">Systems Analyst</p>
+                <p>Moved inventory and pricing systems from database processing to messaging; automated marketplace business rules.</p>
+              </div>
+            </div>
           </li>
-          <li>
-            <div class="slide-top"><span class="when">Nov 2009 — Apr 2014</span><span class="num" aria-hidden="true">06 / 07</span></div>
-            <h3>Systems Analyst</h3>
-            <span class="where">Tokio Marine Seguradora</span>
-            <p>Mission-critical systems for Fleet Auto, Commercial and Transport insurance; business rule automation in the Credit Recovery project.</p>
+          <li class="exp">
+            <h3 class="exp-cabeca">
+              <button type="button" class="exp-botao" aria-expanded="false" aria-controls="exp-6">
+                <span class="exp-empresa">Tokio Marine Seguradora</span>
+                <span class="exp-anos">2009 – 2014</span>
+                <span class="exp-seta" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="exp-painel" id="exp-6">
+              <div class="exp-conteudo">
+                <p class="exp-cargo">Systems Analyst</p>
+                <p>Mission-critical systems for Fleet Auto, Commercial and Transport insurance; business rule automation in the Credit Recovery project.</p>
+              </div>
+            </div>
           </li>
-          <li>
-            <div class="slide-top"><span class="when">Mar 2007 — Nov 2009</span><span class="num" aria-hidden="true">07 / 07</span></div>
-            <h3>Systems Analyst</h3>
-            <span class="where">Fujitsu do Brasil (client: Tokio Marine)</span>
-            <p>Development in Oracle Forms and Reports and maintenance of critical PL/SQL routines.</p>
+          <li class="exp">
+            <h3 class="exp-cabeca">
+              <button type="button" class="exp-botao" aria-expanded="false" aria-controls="exp-7">
+                <span class="exp-empresa">Fujitsu do Brasil (client: Tokio Marine)</span>
+                <span class="exp-anos">2007 – 2009</span>
+                <span class="exp-seta" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="exp-painel" id="exp-7">
+              <div class="exp-conteudo">
+                <p class="exp-cargo">Systems Analyst</p>
+                <p>Development in Oracle Forms and Reports and maintenance of critical PL/SQL routines.</p>
+              </div>
+            </div>
           </li>
         </ol>
-        </div>
-        </div>
       </div>
     </section>
 
