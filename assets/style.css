@@ -203,59 +203,42 @@ h2 { font-size: 28px; font-size: clamp(26px, 4vw, 34px); letter-spacing: -.02em;
 #entregas .card:hover { transform: translateY(-2px); border-color: var(--green); }
 
 /* Trajetória */
-/* Lista sanfonada: a linha da empresa e dos anos fica fixa; o cargo e a descrição descem ao clicar.
-   Só uma experiência aberta por vez. Sem JavaScript tudo aparece aberto. */
-.acordeao { display: flex; flex-direction: column; gap: 12px; margin: 0; padding: 0; list-style: none; }
-.exp {
-  background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--accent);
-  border-radius: var(--radius); box-shadow: var(--shadow); transition: border-color .2s;
-}
-.exp:nth-child(even) { border-left-color: var(--green); }
+/* Lista de empresas: a linha com empresa e anos fica fixa; ao clicar, um card separado com o cargo
+   e a descrição desce logo abaixo dela. Só um aberto por vez. Sem JavaScript todos aparecem abertos. */
+.acordeao { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--border); }
+.exp { border-bottom: 1px solid var(--border); }
 .exp-cabeca { margin: 0; font-size: inherit; }
 .exp-botao {
-  display: flex; align-items: center; gap: 12px 16px; width: 100%; padding: 18px 20px;
+  display: flex; align-items: center; gap: 8px 16px; width: 100%; padding: 16px 4px;
   border: 0; background: none; color: var(--text); font: inherit; text-align: left; cursor: pointer;
-  border-radius: var(--radius);
 }
-@media (min-width: 860px) { .exp-botao { padding: 20px 28px; } }
-.exp-botao:hover .exp-empresa { color: var(--accent); }
-.exp-botao:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.exp-empresa { flex: 1; min-width: 0; font-size: 17px; font-weight: 700; letter-spacing: -.01em; line-height: 1.35; transition: color .2s; }
-.exp-anos {
-  flex: none; font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap;
-  color: var(--accent-2); background: var(--green-soft); border: 1px solid var(--green-border);
-  border-radius: 999px; padding: 4px 12px;
-}
-/* Sinalizador: seta para baixo quando fechada, para cima quando aberta */
-.exp-seta {
-  flex: none; display: grid; place-items: center; width: 32px; height: 32px;
-  border: 1px solid var(--border); border-radius: 999px; color: var(--accent);
-  transition: transform .3s, border-color .2s;
-}
+.exp-botao:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+.exp-empresa { flex: 1; min-width: 0; font-size: 18px; font-weight: 700; letter-spacing: -.01em; line-height: 1.35; transition: color .2s; }
+.exp-botao:hover .exp-empresa, .exp-aberta .exp-empresa { color: var(--accent); }
+.exp-anos { flex: none; color: var(--muted); font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
+/* Sinalizador: seta para baixo quando fechado, para cima quando aberto */
+.exp-seta { flex: none; display: grid; place-items: center; width: 20px; height: 20px; color: var(--accent); transition: transform .3s; }
 .exp-seta::before {
   content: ""; width: 8px; height: 8px; margin-top: -4px;
   border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg);
 }
-.exp-botao[aria-expanded="true"] .exp-seta { transform: rotate(180deg); border-color: var(--accent); }
+.exp-botao[aria-expanded="true"] .exp-seta { transform: rotate(180deg); }
 @media (max-width: 519.98px) {
   .exp-botao { flex-wrap: wrap; }
-  .exp-empresa { flex-basis: calc(100% - 48px); }
+  .exp-empresa { flex-basis: calc(100% - 36px); }
   .exp-seta { order: 2; }
-  .exp-anos { order: 3; }
+  .exp-anos { order: 3; flex-basis: 100%; }
 }
-/* Painel deslizante: anima a altura de 0 até o conteúdo */
+/* Card da descrição: desliza para baixo animando a altura de 0 até o conteúdo */
 .exp-painel { display: grid; grid-template-rows: 1fr; }
-.exp-conteudo { min-height: 0; overflow: hidden; padding: 0 20px 20px; }
-@media (min-width: 860px) { .exp-conteudo { padding: 0 28px 22px; } }
-.exp-cargo { margin: 0 0 6px; font-weight: 600; color: var(--accent); font-size: 15px; }
-.exp-conteudo p:last-child { margin: 0; color: var(--muted); font-size: 15px; }
+.exp-conteudo { min-height: 0; overflow: hidden; padding: 2px 4px 20px; margin: -2px -4px 0; }
+.exp-detalhe { border-top: 3px solid var(--accent); }
+.exp:nth-child(even) .exp-detalhe { border-top-color: var(--green); }
+.exp-detalhe .exp-cargo { margin: 0 0 8px; font-size: 16px; font-weight: 700; color: var(--text); }
 .acordeao-pronto .exp-painel { grid-template-rows: 0fr; visibility: hidden; transition: grid-template-rows .3s ease, visibility 0s .3s; }
-.acordeao-pronto .exp-conteudo { padding-bottom: 0; transition: padding-bottom .3s ease; }
 .acordeao-pronto .exp-aberta .exp-painel { grid-template-rows: 1fr; visibility: visible; transition: grid-template-rows .3s ease, visibility 0s; }
-.acordeao-pronto .exp-aberta .exp-conteudo { padding-bottom: 20px; }
-@media (min-width: 860px) { .acordeao-pronto .exp-aberta .exp-conteudo { padding-bottom: 22px; } }
-.exp-aberta { border-color: var(--accent); }
-.exp-aberta:nth-child(even) { border-color: var(--green); }
+.acordeao-pronto .exp-conteudo { padding-top: 0; padding-bottom: 0; transition: padding .3s ease; }
+.acordeao-pronto .exp-aberta .exp-conteudo { padding-top: 2px; padding-bottom: 20px; }
 @media (prefers-reduced-motion: reduce) {
   .exp-seta, .acordeao-pronto .exp-painel, .acordeao-pronto .exp-conteudo { transition: none; }
 }
