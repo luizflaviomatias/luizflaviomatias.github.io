@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guia de upgrade do Oracle Database — Luiz Flávio Matias</title>
+  <meta name="description" content="AutoUpgrade, SQL Performance Analyzer, SQL Plan Baselines, rollback real e homologação com carga: previsibilidade antes da virada de versão.">
+  <link rel="canonical" href="https://luizflaviomatias.github.io/artigos/upgrade-oracle-database.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Guia de upgrade: previsibilidade antes da virada de versão">
+  <meta property="og:description" content="Migrar um banco crítico raramente falha por causa do instalador.">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css?v=20261120">
+  <script src="../assets/tema.js?v=20261120"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="../index.html">Luiz Flávio <span>Matias</span></a>
+      <button class="theme-toggle" type="button" aria-label="Alternar tema">☾</button>
+    </div>
+  </header>
+
+  <main class="article">
+    <a class="back" href="../index.html#artigos">← Voltar</a>
+    <p class="eyebrow" style="margin-top:24px">Oracle · Upgrade</p>
+    <h1>Guia de upgrade: previsibilidade antes da virada de versão</h1>
+    <p class="byline">Luiz Flávio Matias · 13 de novembro de 2026 · 3 min de leitura</p>
+
+    <blockquote>Migrar ou atualizar um banco de dados crítico raramente falha por causa do instalador.</blockquote>
+
+    <p>Quando dá problema, quase sempre é por falta de diagnóstico prévio, regressão de plano de execução ou ausência de um plano de rollback testado.</p>
+    <p>Ao planejar um upgrade do Oracle Database — seja para o 19c ou avançando para o 26ai —, trato o processo menos como tarefa de infraestrutura e mais como projeto de gestão de risco.</p>
+
+    <h2>1. Diagnóstico automatizado antes de mexer em código</h2>
+    <p>Ferramentas como o AutoUpgrade e o SQL Performance Analyzer (SPA) antecipam gargalos, parâmetros obsoletos e mudanças de comportamento antes da janela oficial.</p>
+
+    <h2>2. Baseline de performance congelada</h2>
+    <p>Capturar SQL Plan Baselines da carga real de produção evita a surpresa clássica da segunda-feira de manhã, quando uma query crítica muda de plano depois da virada.</p>
+
+    <h2>3. Estratégia de rollback real</h2>
+    <p>Dependendo da janela e da criticidade do negócio, avaliar Flashback Database, Guaranteed Restore Points ou GoldenGate é o que separa um susto de 15 minutos de uma indisponibilidade severa.</p>
+
+    <h2>4. Homologação com carga representativa</h2>
+    <p>Testar apenas o fluxo funcional não basta: o batch noturno e os picos de concorrência precisam entrar na validação.</p>
+
+    <p>Previsibilidade em produção nasce muito antes da madrugada da virada.</p>
+    <p><strong>Qual foi o cuidado que salvou um upgrade de banco crítico na sua experiência?</strong> Me conta no <a href="https://www.linkedin.com/in/luizflaviomatias" target="_blank" rel="noopener">LinkedIn</a>.</p>
+
+    <p class="byline" style="margin-top:32px">Publicado originalmente no <a href="https://www.linkedin.com/feed/update/urn:li:activity:7527094193656242176/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 Luiz Flávio Matias dos Santos</span>
+      <a href="../index.html">luizflaviomatias.github.io</a>
+    </div>
+  </footer>
+</body>
+</html>

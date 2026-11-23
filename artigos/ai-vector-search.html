@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Vector Search sem fragmentar a arquitetura — Luiz Flávio Matias</title>
+  <meta name="description" content="Tipo VECTOR, índices vetoriais e RAG no próprio Oracle Database: dado relacional e vetorial na mesma transação, sem ETL entre bancos.">
+  <link rel="canonical" href="https://luizflaviomatias.github.io/artigos/ai-vector-search.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI Vector Search: busca semântica sem fragmentar a arquitetura">
+  <meta property="og:description" content="Menos peças móveis, menos incidentes de madrugada.">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css?v=20261120">
+  <script src="../assets/tema.js?v=20261120"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="../index.html">Luiz Flávio <span>Matias</span></a>
+      <button class="theme-toggle" type="button" aria-label="Alternar tema">☾</button>
+    </div>
+  </header>
+
+  <main class="article">
+    <a class="back" href="../index.html#artigos">← Voltar</a>
+    <p class="eyebrow" style="margin-top:24px">Oracle 26ai · IA</p>
+    <h1>AI Vector Search: busca semântica sem fragmentar a arquitetura</h1>
+    <p class="byline">Luiz Flávio Matias · 12 de novembro de 2026 · 3 min de leitura</p>
+
+    <p>Durante anos, adicionar busca por similaridade — imagens, documentos, áudios ou texto não estruturado — significava introduzir mais um banco especializado na arquitetura. E ganhar de brinde mais um ponto de sincronização, backup e latência.</p>
+    <p>O Oracle AI Vector Search resolve essa dor ao trazer o tipo de dado VECTOR, índices vetoriais e funções de distância diretamente para o motor do Oracle Database. Para quem mantém ambientes críticos em produção, o ganho real está na convergência.</p>
+
+    <h2>Dado relacional e vetorial na mesma transação</h2>
+    <p>Você combina filtros tradicionais de negócio — cliente, contrato, status, janela de tempo — com busca semântica e RAG (Retrieval-Augmented Generation) numa única query SQL.</p>
+
+    <h2>Zero ETL entre bancos distintos</h2>
+    <p>Elimina a complexidade de manter pipelines replicando alterações do transacional para um banco vetorial separado.</p>
+
+    <h2>Operação unificada</h2>
+    <p>Backup, alta disponibilidade (RAC e Data Guard), auditoria e controle de acesso continuam sob o mesmo padrão operacional que já sustenta o core da empresa.</p>
+
+    <blockquote>Menos peças móveis na infraestrutura significam menos incidentes de madrugada e mais previsibilidade nas entregas.</blockquote>
+
+    <p><strong>Na sua arquitetura, faz mais sentido consolidar vetores no banco relacional principal ou manter um vector database dedicado?</strong> Me conta no <a href="https://www.linkedin.com/in/luizflaviomatias" target="_blank" rel="noopener">LinkedIn</a>.</p>
+
+    <p class="byline" style="margin-top:32px">Publicado originalmente no <a href="https://www.linkedin.com/feed/update/urn:li:activity:7526746949933219840/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 Luiz Flávio Matias dos Santos</span>
+      <a href="../index.html">luizflaviomatias.github.io</a>
+    </div>
+  </footer>
+</body>
+</html>

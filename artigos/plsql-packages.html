@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PL/SQL Packages: engenharia de software no banco — Luiz Flávio Matias</title>
+  <meta name="description" content="Encapsulamento, BULK COLLECT e FORALL, JSON, REST e CI/CD: por que PL/SQL Packages bem projetados seguem entre as melhores armas para performance e integridade.">
+  <link rel="canonical" href="https://luizflaviomatias.github.io/artigos/plsql-packages.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="PL/SQL Packages: engenharia de software no coração do banco">
+  <meta property="og:description" content="Tecnologia madura não é tecnologia velha.">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css?v=20261120">
+  <script src="../assets/tema.js?v=20261120"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="../index.html">Luiz Flávio <span>Matias</span></a>
+      <button class="theme-toggle" type="button" aria-label="Alternar tema">☾</button>
+    </div>
+  </header>
+
+  <main class="article">
+    <a class="back" href="../index.html#artigos">← Voltar</a>
+    <p class="eyebrow" style="margin-top:24px">Oracle · PL/SQL</p>
+    <h1>PL/SQL Packages: engenharia de software no coração do banco</h1>
+    <p class="byline">Luiz Flávio Matias · 13 de novembro de 2026 · 3 min de leitura</p>
+
+    <p>Existe um mito recorrente de que colocar regra de negócio no banco é coisa do passado.</p>
+    <p>Na prática, quem sustenta sistemas de alta volumetria em finanças, seguros e telecom sabe que PL/SQL Packages bem projetados continuam sendo uma das armas mais eficientes para performance e integridade.</p>
+    <p>Quando tratamos PL/SQL com rigor de engenharia de software — e não como scripts soltos —, o impacto em produção é imediato.</p>
+
+    <h2>Encapsulamento e contrato claro</h2>
+    <p>Separar especificação (package spec) e implementação (package body) funciona como uma interface bem definida: as mudanças internas ficam isoladas, sem quebrar quem consome.</p>
+
+    <h2>Performance perto do dado</h2>
+    <p>Processamento em lote com BULK COLLECT e FORALL, aliado ao cache de sessão do package, reduz drasticamente o tráfego de rede entre aplicação e banco.</p>
+
+    <h2>Evolução moderna</h2>
+    <p>Hoje os packages conversam nativamente com JSON, APIs REST, microsserviços e até recursos de IA do Oracle, convivendo bem com esteiras de CI/CD e versionamento no Git.</p>
+
+    <blockquote>Tecnologia madura não é tecnologia velha — é tecnologia que aguenta tranco em produção quando bem arquitetada.</blockquote>
+
+    <p><strong>Qual prática você considera indispensável para manter PL/SQL limpo, testável e integrado às esteiras modernas de deploy?</strong> Me conta no <a href="https://www.linkedin.com/in/luizflaviomatias" target="_blank" rel="noopener">LinkedIn</a>.</p>
+
+    <p class="byline" style="margin-top:32px">Publicado originalmente no <a href="https://www.linkedin.com/feed/update/urn:li:activity:7526965874969440256/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 Luiz Flávio Matias dos Santos</span>
+      <a href="../index.html">luizflaviomatias.github.io</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Antes de trocar o servidor, olhe o banco — Luiz Flávio Matias</title>
+  <meta name="description" content="Consultas mal otimizadas, batch estourando a janela e base sem padrão: onde costuma estar o gargalo da operação e como atacar.">
+  <link rel="canonical" href="https://luizflaviomatias.github.io/artigos/tuning-banco-de-dados.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Antes de trocar o servidor, olhe o banco de dados">
+  <meta property="og:description" content="Na maioria das vezes, o gargalo da operação está no banco de dados.">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css?v=20261120">
+  <script src="../assets/tema.js?v=20261120"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="../index.html">Luiz Flávio <span>Matias</span></a>
+      <button class="theme-toggle" type="button" aria-label="Alternar tema">☾</button>
+    </div>
+  </header>
+
+  <main class="article">
+    <a class="back" href="../index.html#artigos">← Voltar</a>
+    <p class="eyebrow" style="margin-top:24px">Oracle · Performance e tuning</p>
+    <h1>Antes de trocar o servidor, olhe o banco de dados</h1>
+    <p class="byline">Luiz Flávio Matias · 23 de novembro de 2026 · 3 min de leitura</p>
+
+    <blockquote>Antes de investir em servidores mais caros ou reescrever o sistema inteiro, olhe para o banco de dados. Na maioria das vezes, o gargalo da operação está ali.</blockquote>
+
+    <p>Em mais de 15 anos com engenharia de dados, Oracle PL/SQL, tuning de SQL e processamento batch em operações críticas — bancos, telecom, seguradoras e e-commerce —, vi o mesmo cenário se repetir muitas vezes.</p>
+
+    <h2>Os três sintomas mais comuns</h2>
+    <ul>
+      <li><strong>Consultas e procedures mal otimizadas</strong> derrubando a performance no horário de pico.</li>
+      <li><strong>Rotinas batch noturnas estourando a janela</strong> e atrasando o início da operação no dia seguinte.</li>
+      <li><strong>Falta de padronização e documentação</strong> na base de dados, gerando risco alto a cada nova manutenção.</li>
+    </ul>
+    <p>Quando a base de dados não é bem cuidada, toda a operação sente o impacto.</p>
+
+    <h2>Onde atacar</h2>
+    <h3>Tuning e otimização (Oracle PL/SQL e SQL)</h3>
+    <p>Diagnóstico de gargalos, refatoração de queries e packages e ganho real de performance, medido antes e depois.</p>
+    <h3>Rotinas batch e integrações</h3>
+    <p>Substituir processos manuais ou frágeis por fluxos seguros e rastreáveis, com Java/Spring Batch, APIs e mensageria.</p>
+    <h3>Saneamento e migrações de base</h3>
+    <p>Planejamento técnico para evoluir a estrutura sem parar a operação.</p>
+
+    <h2>Consultoria a partir de fevereiro de 2027</h2>
+    <p>Estou abrindo agenda para consultorias técnicas pontuais e projetos de pequeno e médio porte nesses três pontos. Se a sua base de dados precisa de atenção para suportar a demanda de 2027, <a href="https://www.linkedin.com/in/luizflaviomatias" target="_blank" rel="noopener">me chame no LinkedIn</a> ou pelo e-mail <a href="mailto:luizflaviomatias@gmail.com">luizflaviomatias@gmail.com</a>.</p>
+
+    <p class="byline" style="margin-top:32px">Publicado originalmente no <a href="https://www.linkedin.com/feed/update/urn:li:activity:7530607571552903169/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 Luiz Flávio Matias dos Santos</span>
+      <a href="../index.html">luizflaviomatias.github.io</a>
+    </div>
+  </footer>
+</body>
+</html>
