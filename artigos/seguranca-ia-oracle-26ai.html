@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Segurança é continuidade do negócio — Luiz Flávio Matias</title>
+  <meta name="description" content="Pane da Microsoft, vazamentos no Brasil e IA dentro do banco: prós e pontos de atenção do Oracle AI Database 26ai para segurança.">
+  <link rel="canonical" href="https://luizflaviomatias.github.io/artigos/seguranca-ia-oracle-26ai.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Segurança da informação não é custo. É continuidade do negócio.">
+  <meta property="og:description" content="Cyber não é só barrar hacker: é garantir confidencialidade, integridade e disponibilidade — inclusive com IA dentro do banco.">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css?v=20261120">
+  <script src="../assets/tema.js?v=20261120"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="../index.html">Luiz Flávio <span>Matias</span></a>
+      <button class="theme-toggle" type="button" aria-label="Alternar tema">☾</button>
+    </div>
+  </header>
+
+  <main class="article">
+    <a class="back" href="../index.html#artigos">← Voltar</a>
+    <p class="eyebrow" style="margin-top:24px">Segurança · Oracle 26ai</p>
+    <h1>Segurança da informação não é custo. É continuidade do negócio.</h1>
+    <p class="byline">Luiz Flávio Matias · 16 de novembro de 2026 · 4 min de leitura</p>
+
+    <h2>Dois lados da mesma moeda</h2>
+    <p>Em 12/11, o Outlook e o Teams pararam em mais de 70 países por mais de 12 horas. A Microsoft disse que não foi ataque: a principal suspeita é uma falha interna ligada a uma mudança de rede. Governos, tribunais e empresas ficaram sem e-mail e sem agenda.</p>
+    <p>No Brasil, em menos de uma semana, foram copiados dados cadastrais de cerca de 7,6 milhões de clientes da Caixa Seguridade, o portal e-Serviços do Tesouro Nacional foi invadido, os sistemas do Porto de Santos ficaram instáveis e houve uma tentativa de ataque aos sites da Petrobras.</p>
+
+    <blockquote>Cyber não é só "barrar hacker". É garantir confidencialidade, integridade e disponibilidade. Uma pane sem nenhum invasor pode parar uma operação tão rápido quanto um ransomware.</blockquote>
+
+    <h2>Princípios que esses episódios reforçam</h2>
+    <ul>
+      <li><strong>Continuidade testada:</strong> se o e-mail cair, qual é o canal alternativo? Quem decide?</li>
+      <li><strong>Gestão de mudanças com rollback:</strong> muitos grandes incidentes começam com uma alteração "simples".</li>
+      <li><strong>Risco de terceiros:</strong> depender de um único fornecedor também é risco.</li>
+      <li><strong>Detecção e resposta:</strong> com um playbook ensaiado, não improvisado.</li>
+      <li><strong>Comunicação:</strong> a LGPD e a ANPD têm prazos, e a transparência protege a reputação.</li>
+      <li><strong>Pessoas:</strong> boa parte dos incidentes começa com um clique.</li>
+    </ul>
+
+    <h2>E onde entra a IA? O caso do Oracle AI Database 26ai</h2>
+    <h3>Prós</h3>
+    <ul>
+      <li>Vetores, RAG e agentes rodam dentro do banco. Os dados saem menos do banco, e há menos pontos por onde vazar.</li>
+      <li>O Deep Data Security controla o acesso no próprio banco, inclusive nas buscas vetoriais: o agente só vê o que o usuário tem permissão de ver.</li>
+      <li>Mantém os controles que já conhecemos: criptografia, auditoria, Database Vault e separação de privilégios.</li>
+    </ul>
+    <h3>Pontos de atenção</h3>
+    <ul>
+      <li><strong>Prompt injection:</strong> o Select AI gera SQL a partir de linguagem natural, e uma instrução maliciosa pode tentar contornar as proteções.</li>
+      <li>Agentes que chamam APIs REST e servidores MCP externos levam o dado para fora da proteção do banco.</li>
+      <li>Uma conta de serviço com privilégio demais vira atalho para um vazamento em grande escala.</li>
+      <li>Recurso novo exige capacitar o time e criar controles de auditoria antes de ir para produção.</li>
+    </ul>
+
+    <h2>Minha leitura</h2>
+    <p>IA dentro do banco pode ser mais segura do que espalhar dados por integrações externas. Mas isso só vale se menor privilégio, auditoria e governança vierem antes de entrar em produção — e não depois.</p>
+    <p>Segurança não é projeto com data para acabar. É disciplina diária.</p>
+    <p><strong>E na sua empresa: o plano de contingência foi acionado na pane da Microsoft, ou todo mundo ficou esperando voltar?</strong> Me conta no <a href="https://www.linkedin.com/in/luizflaviomatias" target="_blank" rel="noopener">LinkedIn</a>.</p>
+
+    <p class="byline" style="margin-top:32px">Publicado originalmente no <a href="https://www.linkedin.com/feed/update/urn:li:activity:7528068303513362433/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 Luiz Flávio Matias dos Santos</span>
+      <a href="../index.html">luizflaviomatias.github.io</a>
+    </div>
+  </footer>
+</body>
+</html>
