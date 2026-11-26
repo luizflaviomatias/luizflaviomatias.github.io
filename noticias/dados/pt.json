@@ -1,29 +1,29 @@
 {
   "idioma": "pt",
-  "atualizadoEm": "2026-11-26T21:06:12.143Z",
+  "atualizadoEm": "2026-11-26T21:24:33.859Z",
   "categorias": [
     {
       "id": "tecnologia",
       "itens": [
         {
+          "titulo": "iPad dobrável gigante da Apple pode custar mais que um MacBook Pro",
+          "link": "https://canaltech.com.br/tablet/ipad-dobravel-gigante-da-apple-pode-custar-mais-que-um-macbook-pro/",
+          "fonte": "Canaltech",
+          "data": "2026-11-26T21:16:08.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "AMD Ryzen 5 8500G com vídeo integrado por apenas R$ 712 no PIX do KaBuM!",
+          "link": "https://canaltech.com.br/hardware/amd-ryzen-5-8500g-com-video-integrado-por-r-712-no-pix-do-kabum/",
+          "fonte": "Canaltech",
+          "data": "2026-11-26T21:07:58.000Z",
+          "fontes": 1
+        },
+        {
           "titulo": "Huawei pode lançar antes uma das principais mudanças do iPhone 20",
           "link": "https://tecnoblog.net/noticias/huawei-pode-lancar-antes-uma-das-principais-mudancas-do-iphone-20/",
           "fonte": "Tecnoblog",
           "data": "2026-11-26T21:03:19.000Z",
-          "fontes": 1
-        },
-        {
-          "titulo": "Take-Two derruba mais de 3 mil ports de GTA 6 para PC no GitHub",
-          "link": "https://canaltech.com.br/games/take-two-derruba-mais-de-3-mil-ports-de-gta-6-para-pc-no-github/",
-          "fonte": "Canaltech",
-          "data": "2026-11-26T20:46:00.000Z",
-          "fontes": 1
-        },
-        {
-          "titulo": "Claude agora cria programas reais para PC no plano grátis",
-          "link": "https://canaltech.com.br/inteligencia-artificial/claude-agora-cria-programas-reais-para-pc-no-plano-gratis/",
-          "fonte": "Canaltech",
-          "data": "2026-11-26T20:32:00.000Z",
           "fontes": 1
         },
         {
@@ -46,24 +46,10 @@
       "id": "negocios",
       "itens": [
         {
-          "titulo": "Eles ainda estão aprendendo a ler e já vão projetar a biblioteca da escola: 'O que muda é o como'",
-          "link": "https://exame.com/carreira/eles-ainda-estao-aprendendo-a-ler-e-ja-vao-projetar-a-biblioteca-da-escola-o-que-muda-e-o-como/",
-          "fonte": "Exame",
-          "data": "2026-11-26T21:00:29.000Z",
-          "fontes": 1
-        },
-        {
           "titulo": "Um robô humanoide pelo preço de um carro elétrico? Essa é a nova aposta da chinesa Xpeng",
           "link": "https://neofeed.com.br/inovacao/um-robo-humanoide-pelo-preco-de-um-carro-eletrico-essa-e-a-nova-aposta-da-chinesa-xpeng/",
           "fonte": "NeoFeed",
           "data": "2026-11-26T20:35:29.000Z",
-          "fontes": 1
-        },
-        {
-          "titulo": "O currículo ficou mais bonito com a IA. E os recrutadores passaram a confiar menos nele",
-          "link": "https://exame.com/carreira/o-curriculo-ficou-mais-bonito-com-a-ia-e-os-recrutadores-passaram-a-confiar-menos-nele/",
-          "fonte": "Exame",
-          "data": "2026-11-26T20:26:41.000Z",
           "fontes": 1
         },
         {
@@ -78,6 +64,20 @@
           "link": "https://neofeed.com.br/negocios/efeito-trabuco-e-correcao-de-exagero-do-mercado-diz-ceo-do-bnp-paribas-no-brasil/",
           "fonte": "NeoFeed",
           "data": "2026-11-26T18:45:30.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Contrata+Brasil conecta empreendedores a oportunidades de Natal",
+          "link": "https://agenciasebrae.com.br/economia-e-politica/contratabrasil-conecta-empreendedores-a-oportunidades-de-natal/",
+          "fonte": "Agência Sebrae",
+          "data": "2026-11-26T18:10:27.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Eles ainda estão aprendendo a ler e já vão projetar a biblioteca da escola: 'O que muda é o como'",
+          "link": "https://exame.com/carreira/eles-ainda-estao-aprendendo-a-ler-e-ja-vao-projetar-a-biblioteca-da-escola-o-que-muda-e-o-como/",
+          "fonte": "Exame",
+          "data": "2026-11-26T18:00:29.000Z",
           "fontes": 1
         }
       ]
@@ -100,11 +100,11 @@
           "fontes": 2
         },
         {
-          "titulo": "Câmara aprova marco regulatório da educação em tempo integral",
-          "link": "https://www.camara.leg.br/noticias/1322878-camara-aprova-marco-regulatorio-da-educacao-em-tempo-integral",
+          "titulo": "LDO de 2027 recebe 1.504 emendas de parlamentares",
+          "link": "https://www.camara.leg.br/noticias/1323481-ldo-de-2027-recebe-1-504-emendas-de-parlamentares",
           "fonte": "Agência Câmara",
-          "data": "2026-11-25T22:11:00.000Z",
-          "fontes": 2
+          "data": "2026-11-26T21:03:00.000Z",
+          "fontes": 1
         },
         {
           "titulo": "STF decide que aplicação piso nacional de professores depende de lei aprovada em estados e municípios",
@@ -187,17 +187,17 @@
           "fontes": 1
         },
         {
-          "titulo": "Taxas caem com expectativa de Trabuco na Fazenda e IPCA-15 abaixo do esperado",
-          "link": "https://www.infomoney.com.br/mercados/taxas-caem-com-expectativa-de-trabuco-na-fazenda-e-ipca-15-abaixo-do-esperado/",
-          "fonte": "InfoMoney",
-          "data": "2026-11-26T20:25:47.000Z",
-          "fontes": 1
-        },
-        {
           "titulo": "Durigan diz que discutirá novas medidas fiscais com Lula: 'Mostrar claramente o caminho para 2027'",
           "link": "https://g1.globo.com/economia/noticia/2026/11/26/durigan-diz-que-discutira-novas-medidas-fiscais-com-lula-mostrar-claramente-o-caminho-para-2027.ghtml",
           "fonte": "g1",
           "data": "2026-11-26T19:08:44.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Espanhol Pablo Hernández de Cos é escolhido para presidir o Banco Central Europeu",
+          "link": "https://g1.globo.com/economia/noticia/2026/11/26/espanhol-pablo-hernandez-de-cos-e-escolhido-para-presidir-o-banco-central-europeu.ghtml",
+          "fonte": "g1",
+          "data": "2026-11-26T18:42:40.000Z",
           "fontes": 1
         }
       ]
@@ -206,28 +206,20 @@
       "id": "curiosidades",
       "itens": [
         {
-          "titulo": "‘O que mais você sabe?’: headhunter fala sobre as ‘invisible skills’ como fator para futuros líderes",
-          "link": "https://exame.com/carreira/o-que-mais-voce-sabe-headhunter-fala-sobre-as-invisible-skills-como-fator-para-futuros-lideres/",
-          "fonte": "Exame",
-          "data": "2026-11-26T20:08:12.000Z",
-          "fontes": 1,
-          "tema": "negocios"
-        },
-        {
-          "titulo": "Previram 34 dias e levaram 55: por que quase todo mundo erra o prazo das próprias tarefas",
-          "link": "https://exame.com/carreira/previram-34-dias-e-levaram-55-por-que-quase-todo-mundo-erra-o-prazo-das-proprias-tarefas/",
-          "fonte": "Exame",
-          "data": "2026-11-26T19:58:42.000Z",
-          "fontes": 1,
-          "tema": "negocios"
-        },
-        {
           "titulo": "Por que GTA 6 tem consequências reais para os crimes? Rockstar explica",
           "link": "https://canaltech.com.br/games/por-que-gta-6-tem-consequencias-reais-para-os-crimes-rockstar-explica/",
           "fonte": "Canaltech",
           "data": "2026-11-26T19:16:00.000Z",
           "fontes": 1,
           "tema": "tecnologia"
+        },
+        {
+          "titulo": "‘O que mais você sabe?’: headhunter fala sobre as ‘invisible skills’ como fator para futuros líderes",
+          "link": "https://exame.com/carreira/o-que-mais-voce-sabe-headhunter-fala-sobre-as-invisible-skills-como-fator-para-futuros-lideres/",
+          "fonte": "Exame",
+          "data": "2026-11-26T17:08:12.000Z",
+          "fontes": 1,
+          "tema": "negocios"
         },
         {
           "titulo": "6 pontos de atenção na montagem do novo ministério de Lula",
@@ -244,6 +236,14 @@
           "data": "2026-11-26T17:00:19.000Z",
           "fontes": 1,
           "tema": "tecnologia"
+        },
+        {
+          "titulo": "Previram 34 dias e levaram 55: por que quase todo mundo erra o prazo das próprias tarefas",
+          "link": "https://exame.com/carreira/previram-34-dias-e-levaram-55-por-que-quase-todo-mundo-erra-o-prazo-das-proprias-tarefas/",
+          "fonte": "Exame",
+          "data": "2026-11-26T16:58:42.000Z",
+          "fontes": 1,
+          "tema": "negocios"
         }
       ]
     }

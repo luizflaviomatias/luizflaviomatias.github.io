@@ -1,10 +1,17 @@
 {
   "idioma": "es",
-  "atualizadoEm": "2026-11-26T21:06:12.143Z",
+  "atualizadoEm": "2026-11-26T21:24:33.859Z",
   "categorias": [
     {
       "id": "tecnologia",
       "itens": [
+        {
+          "titulo": "\"Tenemos que prepararnos para los próximos meses\": el presidente de Microsoft alerta del riesgo de más caídas ligado a la IA",
+          "link": "https://www.xataka.com/seguridad/tenemos-que-prepararnos-para-proximos-meses-presidente-microsoft-alerta-riesgo-caidas-ligado-a-ia",
+          "fonte": "Xataka",
+          "data": "2026-11-26T21:00:29.000Z",
+          "fontes": 1
+        },
         {
           "titulo": "¿Cómo logró ‘GTA 6’ mantener a salvo su secreto más importante? Rockstar responde",
           "link": "https://hipertextual.com/videojuegos/gta-6-rob-nelson-mayor-secreto-a-salvo-rockstar/",
@@ -24,13 +31,6 @@
           "link": "https://hipertextual.com/videojuegos/gta-6-record-lanzamiento-fisico-caja-sin-disco/",
           "fonte": "Hipertextual",
           "data": "2026-11-26T18:45:00.000Z",
-          "fontes": 1
-        },
-        {
-          "titulo": "SpaceX tiene luz verde para desplegar un millón de satélites con centros de datos: no es por la IA es por la energía",
-          "link": "https://www.xataka.com/espacio/spacex-tiene-luz-verde-para-desplegar-millon-satelites-centros-datos-no-ia-energia",
-          "fonte": "Xataka",
-          "data": "2026-11-26T17:33:44.000Z",
           "fontes": 1
         },
         {
@@ -89,7 +89,7 @@
           "titulo": "Debate elecciones generales, en directo: Pedro Sánchez, Feijóo, Abascal y Ada Colau en el debate a cuatro hoy",
           "link": "https://www.abc.es/espana/debate-elecciones-generales-directo-pedro-sanchez-feijoo-20261126201502-di.html",
           "fonte": "ABC",
-          "data": "2026-11-26T20:43:03.000Z",
+          "data": "2026-11-26T21:03:40.000Z",
           "fontes": 4
         },
         {
