@@ -23,8 +23,12 @@ test("feed fora do ar vira erro com a URL e o status", async () => {
 });
 
 test("feed que não responde é abandonado no tempo limite", async () => {
+  // O timer do AbortSignal.timeout não segura o processo; sem uma conexão de verdade, este timer faz esse papel.
   const travado = (_url, { signal }) =>
-    new Promise((_resolve, rejeitar) => signal.addEventListener("abort", () => rejeitar(new Error("tempo esgotado"))));
+    new Promise((_resolve, rejeitar) => {
+      const conexaoPendente = setTimeout(() => {}, 10_000);
+      signal.addEventListener("abort", () => { clearTimeout(conexaoPendente); rejeitar(new Error("tempo esgotado")); });
+    });
   const buscar = criarBuscador({ ...RAPIDO, fetch: travado });
   await assert.rejects(buscar("https://lento/feed"), /lento\/feed: tempo esgotado/);
 });
