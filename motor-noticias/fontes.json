@@ -1,0 +1,149 @@
+{
+  "pt": {
+    "excluirTitulos": "black friday|black week|esquenta black|cyber monday|\\bcupo(m|ns)\\b|\\bofertas?\\b|\\bdescontos?\\b|% off|\\boff\\b|imperdivel|menor preco|derrub\\w* (o )?preco|\\bpromoc|cashback|vale a pena comprar|para comprar|qual .* escolher|queda livre|preco em queda|preco baixo|loteria|mega.sena|lotofacil|horoscopo",
+    "explicativa": "^(por que|entenda|como funciona|o que e|o que sao|o que esta por tras|o que revela|o que significa|o que se sabe|qual a origem|voce sabia|curiosidade|\\d+ (pontos|coisas|fatos|perguntas|motivos|razoes|curiosidades))( |$)|\\?$",
+    "categorias": {
+      "tecnologia": {
+        "palavrasChave": ["tecnolog*", "ia", "inteligencia artificial", "aplicativ*", "app", "apps", "software*", "internet", "celular*", "smartphone*", "chip*", "computador*", "ciberseguranca", "hacker*", "ransomware", "golpe digital", "google", "apple", "microsoft", "openai", "nvidia", "robo*", "digita*", "algoritm*", "whatsapp", "satelite*", "big techs", "redes sociais"],
+        "fontes": [
+          { "nome": "Tecnoblog", "url": "https://tecnoblog.net/feed/", "excluirLinks": "/achados/|/guias/|/responde/" },
+          { "nome": "Canaltech", "url": "https://canaltech.com.br/rss/", "excluirLinks": "/entretenimento/" },
+          { "nome": "Olhar Digital", "url": "https://olhardigital.com.br/feed/", "excluirLinks": "/reviews/" }
+        ]
+      },
+      "negocios": {
+        "palavrasChave": ["empresa*", "empreend*", "negocio*", "startup*", "ceo", "executiv*", "gestao", "gestor*", "lideranc*", "lider*", "carreira*", "varejo", "marca*", "fusao", "aquisic*", "lucro*", "faturament*", "vendas", "pme*", "sebrae", "recrutador*", "produtividade"],
+        "fontes": [
+          { "nome": "Exame", "url": "https://exame.com/feed/", "incluirLinks": "/negocios/|/carreira/|/esg/|/marketing/|/lideres/|/pme/" },
+          { "nome": "Agência Sebrae", "url": "https://agenciasebrae.com.br/feed/" },
+          { "nome": "NeoFeed", "url": "https://neofeed.com.br/feed/", "incluirLinks": "/negocios/|/startups/|/inovacao/" },
+          { "nome": "Startups", "url": "https://startups.com.br/feed/", "excluirLinks": "/branded-content/|/podcast/" }
+        ]
+      },
+      "politica-nacional": {
+        "palavrasChave": ["governo", "lula", "congresso", "senado", "camara", "deputad*", "senador*", "stf", "ministr*", "eleic*", "eleitora*", "partido*", "presidente", "planalto", "tse", "pec", "projeto de lei", "prefeit*", "governador*", "bolsonaro", "politic*", "ibama"],
+        "fontes": [
+          { "nome": "Agência Brasil", "url": "https://agenciabrasil.ebc.com.br/rss/politica/feed.xml" },
+          { "nome": "Agência Senado", "url": "https://www12.senado.leg.br/noticias/feed/todasnoticias/RSS" },
+          { "nome": "Agência Câmara", "url": "https://www.camara.leg.br/noticias/rss/ultimas-noticias" },
+          { "nome": "g1", "url": "https://g1.globo.com/rss/g1/politica/", "incluirLinks": "/politica/" }
+        ]
+      },
+      "politica-internacional": {
+        "palavrasChave": ["eua", "trump", "china", "russia", "ucrania", "israel", "gaza", "ira", "onu", "otan", "guerra*", "diplomac*", "embaixad*", "europa", "europeia", "argentina", "milei", "venezuela", "espanha", "franca", "alemanha", "reino unido", "japao", "india", "mexico", "colombia", "chile", "peru", "coreia", "eleic*", "eleitora*", "primeiro ministro", "internaciona*", "cupula", "tarifa*", "refugiad*", "migrac*", "conflito*"],
+        "fontes": [
+          { "nome": "Agência Brasil", "url": "https://agenciabrasil.ebc.com.br/rss/internacional/feed.xml", "incluirLinks": "/internacional/" },
+          { "nome": "ONU News", "url": "https://news.un.org/feed/subscribe/pt/news/all/rss.xml" },
+          { "nome": "BBC News Brasil", "url": "https://feeds.bbci.co.uk/portuguese/rss.xml", "filtrarPorTema": true },
+          { "nome": "DW Brasil", "url": "https://rss.dw.com/xml/rss-br-all", "filtrarPorTema": true }
+        ]
+      },
+      "economia": {
+        "palavrasChave": ["economi*", "inflac*", "juro*", "selic", "pib", "dolar", "ibovespa", "bolsa*", "imposto*", "tribut*", "fiscal", "orcamento", "desemprego", "emprego*", "salario*", "banco central", "mercado*", "tarifa*", "combustive*", "diesel", "gasolina", "preco*", "fazenda", "credito", "divida*"],
+        "fontes": [
+          { "nome": "Agência Brasil", "url": "https://agenciabrasil.ebc.com.br/rss/economia/feed.xml", "incluirLinks": "/economia/" },
+          { "nome": "g1", "url": "https://g1.globo.com/rss/g1/economia/", "incluirLinks": "/economia/" },
+          { "nome": "InfoMoney", "url": "https://www.infomoney.com.br/feed/", "incluirLinks": "/mercados/|/economia/|/minhas-financas/" }
+        ]
+      },
+      "curiosidades": {
+        "fontes": [
+          { "nome": "Superinteressante", "url": "https://super.abril.com.br/feed/" },
+          { "nome": "Nexo", "url": "https://www.nexojornal.com.br/rss.xml" }
+        ]
+      }
+    }
+  },
+  "en": {
+    "excluirTitulos": "black friday|cyber monday|\\bdeals?\\b|% off|\\bdiscounts?\\b|\\bcoupons?\\b|best .* to buy|\\bon sale\\b|prime day|gift guide|wordle|crossword|horoscope|\\bthe best\\b|\\btested\\b",
+    "explicativa": "^(why|how|what is|what are|what s|explained|explainer|the history of|the science of|what we know|things to know|did you know|\\d+ (things|facts|questions|reasons|ways))( |$)|\\?$",
+    "categorias": {
+      "tecnologia": {
+        "palavrasChave": ["tech*", "ai", "artificial intelligence", "app", "apps", "software", "internet", "smartphone*", "iphone*", "android", "chip*", "computer*", "cyber*", "hacker*", "ransomware", "google", "apple", "microsoft", "openai", "nvidia", "robot*", "digital", "algorithm*", "satellite*", "data center*", "social media"],
+        "fontes": [
+          { "nome": "Ars Technica", "url": "https://feeds.arstechnica.com/arstechnica/index" },
+          { "nome": "BBC", "url": "https://feeds.bbci.co.uk/news/technology/rss.xml" },
+          { "nome": "The Guardian", "url": "https://www.theguardian.com/technology/rss" },
+          { "nome": "NPR", "url": "https://feeds.npr.org/1019/rss.xml" }
+        ]
+      },
+      "negocios": {
+        "palavrasChave": ["business*", "compan*", "startup*", "ceo", "ceos", "executive*", "management", "manager*", "leader*", "career*", "retail*", "brand*", "merger*", "acquisition*", "profit*", "revenue*", "sales", "workplace", "employee*", "entrepreneur*", "strateg*"],
+        "fontes": [
+          { "nome": "MIT Sloan Management Review", "url": "https://sloanreview.mit.edu/feed/" },
+          { "nome": "BBC", "url": "https://feeds.bbci.co.uk/news/business/rss.xml" },
+          { "nome": "NPR", "url": "https://feeds.npr.org/1006/rss.xml" }
+        ]
+      },
+      "politica-nacional": {
+        "palavrasChave": ["congress", "senate", "senator*", "house", "white house", "president", "trump", "vance", "democrat*", "republican*", "gop", "election*", "midterm*", "supreme court", "governor*", "campaign*", "vote*", "voter*", "administration", "politic*", "biden"],
+        "fontes": [
+          { "nome": "NPR", "url": "https://feeds.npr.org/1014/rss.xml" },
+          { "nome": "PBS NewsHour", "url": "https://www.pbs.org/newshour/feeds/rss/politics" },
+          { "nome": "Politico", "url": "https://rss.politico.com/politics-news.xml" },
+          { "nome": "The Hill", "url": "https://thehill.com/homenews/feed/" }
+        ]
+      },
+      "economia": {
+        "palavrasChave": ["econom*", "inflation", "interest rate*", "rates", "fed", "federal reserve", "gdp", "dollar", "stock*", "market*", "tax*", "tariff*", "budget", "deficit", "debt", "jobs", "unemployment", "wage*", "price*", "recession", "mortgage*", "oil"],
+        "fontes": [
+          { "nome": "The Guardian", "url": "https://www.theguardian.com/business/economics/rss" },
+          { "nome": "NPR", "url": "https://feeds.npr.org/1017/rss.xml" },
+          { "nome": "CNBC", "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html" }
+        ]
+      },
+      "curiosidades": {
+        "fontes": [
+          { "nome": "Smithsonian", "url": "https://www.smithsonianmag.com/rss/latest_articles/" },
+          { "nome": "Knowable Magazine", "url": "https://knowablemagazine.org/rss" },
+          { "nome": "The Conversation", "url": "https://theconversation.com/us/articles.atom" }
+        ]
+      }
+    }
+  },
+  "es": {
+    "excluirTitulos": "black friday|cyber monday|\\bofertas?\\b|\\bdescuentos?\\b|\\brebajas?\\b|\\bchollos?\\b|\\bcupon|% de descuento|para comprar|\\bloteria|\\bhoroscopo",
+    "explicativa": "^(por que|como|que es|que son|claves|las claves|lo que sabemos|lo que se sabe|asi es|asi funciona|la historia de|el origen de|sabias)( |$)|\\?$",
+    "categorias": {
+      "tecnologia": {
+        "palavrasChave": ["tecnolog*", "ia", "inteligencia artificial", "aplicacion*", "app", "apps", "software", "internet", "movil*", "smartphone*", "chip*", "ordenador*", "ciberseguridad", "hacker*", "ransomware", "google", "apple", "microsoft", "openai", "nvidia", "robot*", "digital*", "algoritmo*", "whatsapp", "satelite*", "redes sociales"],
+        "fontes": [
+          { "nome": "Xataka", "url": "https://www.xataka.com/feedburner.xml", "excluirLinks": "/seleccion/" },
+          { "nome": "Genbeta", "url": "https://feeds.weblogssl.com/genbeta", "filtrarPorTema": true },
+          { "nome": "Hipertextual", "url": "https://hipertextual.com/feed" },
+          { "nome": "El País", "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/tecnologia/portada" }
+        ]
+      },
+      "negocios": {
+        "palavrasChave": ["empresa*", "emprend*", "negocio*", "startup*", "consejero delegado", "ceo", "directiv*", "gestion", "liderazgo", "lider*", "carrera*", "comercio", "marca*", "fusion*", "adquisicion*", "beneficio*", "facturacion", "ventas", "pymes", "pyme", "plantilla*"],
+        "fontes": [
+          { "nome": "Expansión", "url": "https://e00-expansion.uecdn.es/rss/empresas.xml" },
+          { "nome": "Cinco Días", "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/cincodias.elpais.com/portada", "filtrarPorTema": true }
+        ]
+      },
+      "politica-nacional": {
+        "palavrasChave": ["gobierno", "sanchez", "feijoo", "abascal", "colau", "congreso", "senado", "diputad*", "ministr*", "eleccion*", "electoral*", "partido*", "psoe", "pp", "vox", "sumar", "podemos", "moncloa", "generalitat", "investidura", "politic*", "campana", "debate"],
+        "fontes": [
+          { "nome": "El País", "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/espana/portada" },
+          { "nome": "El Mundo", "url": "https://www.elmundo.es/rss/espana.xml" },
+          { "nome": "ABC", "url": "https://www.abc.es/rss/2.0/espana/" },
+          { "nome": "elDiario.es", "url": "https://www.eldiario.es/rss/politica/" }
+        ]
+      },
+      "economia": {
+        "palavrasChave": ["economi*", "inflacion", "ipc", "tipos de interes", "bce", "pib", "euro", "dolar", "bolsa*", "ibex", "impuesto*", "fiscal", "presupuesto*", "deuda", "paro", "empleo*", "salario*", "precio*", "pensiones", "hacienda", "vivienda", "alquiler*", "arancel*"],
+        "fontes": [
+          { "nome": "El País", "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/economia/portada" },
+          { "nome": "Expansión", "url": "https://e00-expansion.uecdn.es/rss/portada.xml", "incluirLinks": "/economia/|/mercados/|/fiscal/" },
+          { "nome": "elDiario.es", "url": "https://www.eldiario.es/rss/economia/" }
+        ]
+      },
+      "curiosidades": {
+        "fontes": [
+          { "nome": "Muy Interesante", "url": "https://www.muyinteresante.com/feed/" },
+          { "nome": "BBC Mundo", "url": "https://feeds.bbci.co.uk/mundo/rss.xml", "exigirExplicativa": true }
+        ]
+      }
+    }
+  }
+}

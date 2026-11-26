@@ -1,0 +1,18 @@
+{
+  "name": "luizflaviomatias.github.io",
+  "private": true,
+  "type": "module",
+  "description": "Site pessoal, a engine que atualiza a área de Notícias e o post diário no LinkedIn",
+  "scripts": {
+    "test": "node --test \"testes/*.test.mjs\"",
+    "noticias": "node motor-noticias/principal.mjs",
+    "linkedin": "node motor-linkedin/principal.mjs",
+    "autorizar-linkedin": "node motor-linkedin/autorizar.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.14.0"
+  }
+}

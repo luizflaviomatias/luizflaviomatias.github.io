@@ -1,0 +1,252 @@
+{
+  "idioma": "pt",
+  "atualizadoEm": "2026-11-26T21:06:12.143Z",
+  "categorias": [
+    {
+      "id": "tecnologia",
+      "itens": [
+        {
+          "titulo": "Huawei pode lançar antes uma das principais mudanças do iPhone 20",
+          "link": "https://tecnoblog.net/noticias/huawei-pode-lancar-antes-uma-das-principais-mudancas-do-iphone-20/",
+          "fonte": "Tecnoblog",
+          "data": "2026-11-26T21:03:19.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Take-Two derruba mais de 3 mil ports de GTA 6 para PC no GitHub",
+          "link": "https://canaltech.com.br/games/take-two-derruba-mais-de-3-mil-ports-de-gta-6-para-pc-no-github/",
+          "fonte": "Canaltech",
+          "data": "2026-11-26T20:46:00.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Claude agora cria programas reais para PC no plano grátis",
+          "link": "https://canaltech.com.br/inteligencia-artificial/claude-agora-cria-programas-reais-para-pc-no-plano-gratis/",
+          "fonte": "Canaltech",
+          "data": "2026-11-26T20:32:00.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Brasil lidera ranking de vítimas de ransomware; veja os números",
+          "link": "https://olhardigital.com.br/2026/11/26/seguranca/brasil-lidera-ranking-de-vitimas-de-ransomware-veja-os-numeros/",
+          "fonte": "Olhar Digital",
+          "data": "2026-11-26T20:12:21.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "The Witcher 4 sairá em todas as plataformas ao mesmo tempo, e Cyberpunk 2 chega a 199 devs",
+          "link": "https://olhardigital.com.br/2026/11/26/games-e-consoles/the-witcher-4-multiplataforma-cyberpunk-2-199-devs/",
+          "fonte": "Olhar Digital",
+          "data": "2026-11-26T20:00:00.000Z",
+          "fontes": 1
+        }
+      ]
+    },
+    {
+      "id": "negocios",
+      "itens": [
+        {
+          "titulo": "Eles ainda estão aprendendo a ler e já vão projetar a biblioteca da escola: 'O que muda é o como'",
+          "link": "https://exame.com/carreira/eles-ainda-estao-aprendendo-a-ler-e-ja-vao-projetar-a-biblioteca-da-escola-o-que-muda-e-o-como/",
+          "fonte": "Exame",
+          "data": "2026-11-26T21:00:29.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Um robô humanoide pelo preço de um carro elétrico? Essa é a nova aposta da chinesa Xpeng",
+          "link": "https://neofeed.com.br/inovacao/um-robo-humanoide-pelo-preco-de-um-carro-eletrico-essa-e-a-nova-aposta-da-chinesa-xpeng/",
+          "fonte": "NeoFeed",
+          "data": "2026-11-26T20:35:29.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "O currículo ficou mais bonito com a IA. E os recrutadores passaram a confiar menos nele",
+          "link": "https://exame.com/carreira/o-curriculo-ficou-mais-bonito-com-a-ia-e-os-recrutadores-passaram-a-confiar-menos-nele/",
+          "fonte": "Exame",
+          "data": "2026-11-26T20:26:41.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Mercado sem concorrência: o canto da sereia do founder",
+          "link": "https://startups.com.br/coluna/mercado-sem-concorrencia-o-canto-da-sereia-do-founder/",
+          "fonte": "Startups",
+          "data": "2026-11-26T20:00:00.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "“Efeito Trabuco” é correção de exagero do mercado, diz CEO do BNP Paribas no Brasil",
+          "link": "https://neofeed.com.br/negocios/efeito-trabuco-e-correcao-de-exagero-do-mercado-diz-ceo-do-bnp-paribas-no-brasil/",
+          "fonte": "NeoFeed",
+          "data": "2026-11-26T18:45:30.000Z",
+          "fontes": 1
+        }
+      ]
+    },
+    {
+      "id": "politica-nacional",
+      "itens": [
+        {
+          "titulo": "Comissão Mista aprova relatório preliminar do Orçamento de 2027",
+          "link": "https://www.camara.leg.br/noticias/1323430-comissao-mista-aprova-relatorio-preliminar-do-orcamento-de-2027",
+          "fonte": "Agência Câmara",
+          "data": "2026-11-26T19:44:00.000Z",
+          "fontes": 2
+        },
+        {
+          "titulo": "Senado aprova projeto que proíbe fiança em caso de morte no trânsito causada por embriaguez ao volante",
+          "link": "https://g1.globo.com/politica/noticia/2026/11/26/senado-aprova-projeto-que-proibe-fianca-em-caso-de-morte-no-transito-causada-por-embriaguez-ao-volante.ghtml",
+          "fonte": "g1",
+          "data": "2026-11-26T18:12:48.000Z",
+          "fontes": 2
+        },
+        {
+          "titulo": "Câmara aprova marco regulatório da educação em tempo integral",
+          "link": "https://www.camara.leg.br/noticias/1322878-camara-aprova-marco-regulatorio-da-educacao-em-tempo-integral",
+          "fonte": "Agência Câmara",
+          "data": "2026-11-25T22:11:00.000Z",
+          "fontes": 2
+        },
+        {
+          "titulo": "STF decide que aplicação piso nacional de professores depende de lei aprovada em estados e municípios",
+          "link": "https://g1.globo.com/politica/noticia/2026/11/26/stf-decide-que-aplicacao-piso-nacional-de-professores-depende-de-lei-aprovada-em-estados-e-municipios.ghtml",
+          "fonte": "g1",
+          "data": "2026-11-26T21:00:17.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Projeto afasta hipóteses que relativizam crime de estupro de vulnerável",
+          "link": "https://www12.senado.leg.br/noticias/audios/2026/11/projeto-afasta-hipoteses-que-relativizam-crime-de-estupro-de-vulneravel",
+          "fonte": "Agência Senado",
+          "data": "2026-11-26T20:39:04.000Z",
+          "fontes": 1
+        }
+      ]
+    },
+    {
+      "id": "politica-internacional",
+      "itens": [
+        {
+          "titulo": "Espanha avalia risco ambiental após navio-tanque com 7 mil toneladas de diesel virar perto de Ibiza",
+          "link": "https://www.bbc.com/portuguese/articles/c60ev94d02jlo?at_medium=RSS&at_campaign=rss",
+          "fonte": "BBC News Brasil",
+          "data": "2026-11-26T16:08:49.000Z",
+          "fontes": 2
+        },
+        {
+          "titulo": "Custo de vida e migração dominam campanha eleitoral na Espanha",
+          "link": "https://www.dw.com/pt-br/custo-de-vida-e-migração-dominam-campanha-eleitoral-na-espanha/a-80052698?maca=bra-rss-br-all-1030-xml-mrss",
+          "fonte": "DW Brasil",
+          "data": "2026-11-26T20:17:00.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "EUA divulgam arquivos oficiais sobre Pé-Grande e reacendem mistério",
+          "link": "https://www.dw.com/pt-br/eua-divulgam-arquivos-oficiais-sobre-pé-grande-e-reacendem-mistério/a-80062113?maca=bra-rss-br-all-1030-xml-mrss",
+          "fonte": "DW Brasil",
+          "data": "2026-11-26T17:00:00.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Os cabo-verdianos abraçaram a ideia do desenvolvimento, diz chefe da ONU no país",
+          "link": "https://news.un.org/feed/view/pt/story/2026/11/1855012",
+          "fonte": "ONU News",
+          "data": "2026-11-26T12:00:00.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "China: questões comerciais com EUA devem ser resolvidas com diálogo",
+          "link": "https://agenciabrasil.ebc.com.br/internacional/noticia/2026-11/china-questoes-comerciais-com-eua-devem-ser-resolvidas-com-dialogo",
+          "fonte": "Agência Brasil",
+          "data": "2026-11-26T11:54:00.000Z",
+          "fontes": 1
+        }
+      ]
+    },
+    {
+      "id": "economia",
+      "itens": [
+        {
+          "titulo": "Governo prorroga subsídio de R$ 2,12 ao diesel por mais 30 dias",
+          "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/governo-prorroga-subsidio-de-r-212-ao-diesel-por-mais-30-dias",
+          "fonte": "Agência Brasil",
+          "data": "2026-11-26T19:31:00.000Z",
+          "fontes": 2
+        },
+        {
+          "titulo": "Alckmin trata possível tarifa a aviões do Brasil como “descabida”",
+          "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/alckmin-trata-possivel-tarifa-avioes-do-brasil-como-descabida",
+          "fonte": "Agência Brasil",
+          "data": "2026-11-26T17:46:00.000Z",
+          "fontes": 2
+        },
+        {
+          "titulo": "Ibovespa salta 6% com notícia de ida de Trabuco a Brasília para encontrar Lula",
+          "link": "https://www.infomoney.com.br/mercados/ibovespa-salta-3-e-supera-os-172-mil-pontos-com-possibilidade-de-trabuco-na-fazenda/",
+          "fonte": "InfoMoney",
+          "data": "2026-11-26T20:56:42.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Taxas caem com expectativa de Trabuco na Fazenda e IPCA-15 abaixo do esperado",
+          "link": "https://www.infomoney.com.br/mercados/taxas-caem-com-expectativa-de-trabuco-na-fazenda-e-ipca-15-abaixo-do-esperado/",
+          "fonte": "InfoMoney",
+          "data": "2026-11-26T20:25:47.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Durigan diz que discutirá novas medidas fiscais com Lula: 'Mostrar claramente o caminho para 2027'",
+          "link": "https://g1.globo.com/economia/noticia/2026/11/26/durigan-diz-que-discutira-novas-medidas-fiscais-com-lula-mostrar-claramente-o-caminho-para-2027.ghtml",
+          "fonte": "g1",
+          "data": "2026-11-26T19:08:44.000Z",
+          "fontes": 1
+        }
+      ]
+    },
+    {
+      "id": "curiosidades",
+      "itens": [
+        {
+          "titulo": "‘O que mais você sabe?’: headhunter fala sobre as ‘invisible skills’ como fator para futuros líderes",
+          "link": "https://exame.com/carreira/o-que-mais-voce-sabe-headhunter-fala-sobre-as-invisible-skills-como-fator-para-futuros-lideres/",
+          "fonte": "Exame",
+          "data": "2026-11-26T20:08:12.000Z",
+          "fontes": 1,
+          "tema": "negocios"
+        },
+        {
+          "titulo": "Previram 34 dias e levaram 55: por que quase todo mundo erra o prazo das próprias tarefas",
+          "link": "https://exame.com/carreira/previram-34-dias-e-levaram-55-por-que-quase-todo-mundo-erra-o-prazo-das-proprias-tarefas/",
+          "fonte": "Exame",
+          "data": "2026-11-26T19:58:42.000Z",
+          "fontes": 1,
+          "tema": "negocios"
+        },
+        {
+          "titulo": "Por que GTA 6 tem consequências reais para os crimes? Rockstar explica",
+          "link": "https://canaltech.com.br/games/por-que-gta-6-tem-consequencias-reais-para-os-crimes-rockstar-explica/",
+          "fonte": "Canaltech",
+          "data": "2026-11-26T19:16:00.000Z",
+          "fontes": 1,
+          "tema": "tecnologia"
+        },
+        {
+          "titulo": "6 pontos de atenção na montagem do novo ministério de Lula",
+          "link": "https://www.nexojornal.com.br/expresso/2026/11/26/ministerio-ministros-governo-lula-4-anuncio",
+          "fonte": "Nexo",
+          "data": "2026-11-26T17:07:18.000Z",
+          "fontes": 1,
+          "tema": "politica-nacional"
+        },
+        {
+          "titulo": "Por que os matemáticos ainda não conseguem ler a prova de Riemann feita por IA?",
+          "link": "https://super.abril.com.br/ciencia/por-que-os-matematicos-ainda-nao-conseguem-ler-a-prova-de-riemann-feita-por-ia/",
+          "fonte": "Superinteressante",
+          "data": "2026-11-26T17:00:19.000Z",
+          "fontes": 1,
+          "tema": "tecnologia"
+        }
+      ]
+    }
+  ],
+  "fontesComFalha": []
+}
