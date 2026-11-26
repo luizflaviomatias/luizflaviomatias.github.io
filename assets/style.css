@@ -87,8 +87,11 @@ img { max-width: 100%; }
 .brand span { color: var(--accent); }
 .nav { display: none; gap: 22px; }
 .nav a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; }
-.nav a:hover { color: var(--text); }
+.nav a:hover, .nav a[aria-current="page"] { color: var(--text); }
+.nav a { white-space: nowrap; }
 @media (min-width: 860px) { .nav { display: flex; } }
+/* Com 8 itens, o menu só cabe em uma linha entre 860 e 1100px se ficar um pouco mais compacto */
+@media (min-width: 860px) and (max-width: 1099.98px) { .nav { gap: 14px; } .nav a { font-size: 13px; } }
 
 /* Menu para celular e tablet (abaixo de 860px) */
 .menu-toggle {
@@ -296,6 +299,17 @@ footer .container { display: flex; justify-content: space-between; flex-wrap: wr
 .skeleton { min-height: 150px; background: linear-gradient(90deg, var(--surface) 0%, var(--surface-2) 50%, var(--surface) 100%); background-size: 200% 100%; animation: brilho 1.4s infinite linear; }
 @keyframes brilho { to { background-position: -200% 0; } }
 @media (prefers-reduced-motion: reduce) { .skeleton { animation: none; } }
+
+/* Notícias: reaproveita card, list, meta, chip e badge; aqui só o que é próprio da lista de manchetes */
+.badge[hidden] { display: none; }
+.noticias-atalhos { margin: 24px 0 28px; }
+.chips a.chip { text-decoration: none; }
+.chips a.chip:hover { border-color: var(--accent); color: var(--accent); }
+.noticias-grade > .card { scroll-margin-top: 72px; }
+.noticias-lista li { flex-direction: column; gap: 2px; }
+.noticias-lista a { color: var(--text); text-decoration: none; font-weight: 600; line-height: 1.4; }
+.noticias-lista a:hover { color: var(--accent); }
+.noticias-aviso { color: var(--muted); font-size: 14px; margin: 28px 0 0; }
 
 :focus-visible { outline: 3px solid var(--accent-2); outline-offset: 2px; border-radius: 6px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

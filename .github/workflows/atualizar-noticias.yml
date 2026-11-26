@@ -1,0 +1,42 @@
+name: Atualizar notícias
+
+on:
+  # Todo dia às 06:00 de Brasília (09:00 UTC).
+  schedule:
+    - cron: "0 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Duas atualizações ao mesmo tempo poderiam publicar o mesmo arquivo duas vezes.
+concurrency:
+  group: atualizar-noticias
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm test
+      - name: Buscar os feeds e escolher as notícias
+        run: npm run noticias
+      # Publica o que deu certo mesmo se alguma categoria ficou vazia; nesse caso o job fica vermelho no fim.
+      - name: Publicar no site
+        if: always()
+        run: |
+          git add noticias/dados
+          if git diff --cached --quiet; then
+            echo "Nenhuma notícia nova."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Atualiza as notícias do dia"
+          git pull --rebase
+          git push

@@ -1,0 +1,212 @@
+{
+  "idioma": "en",
+  "atualizadoEm": "2026-11-26T21:06:12.143Z",
+  "categorias": [
+    {
+      "id": "tecnologia",
+      "itens": [
+        {
+          "titulo": "Musk's plan to send a million SpaceX data satellites into space approved",
+          "link": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo?at_medium=RSS&at_campaign=rss",
+          "fonte": "BBC",
+          "data": "2026-11-26T09:27:44.000Z",
+          "fontes": 3
+        },
+        {
+          "titulo": "Guilty: Huawei faces steep penalties for stealing T-Mobile, Cisco trade secrets",
+          "link": "https://arstechnica.com/tech-policy/2026/11/jury-convicts-huawei-of-stealing-us-trade-secrets-evading-iran-sanctions/",
+          "fonte": "Ars Technica",
+          "data": "2026-11-25T16:33:45.000Z",
+          "fontes": 2
+        },
+        {
+          "titulo": "Botty? AI helps resurrect voice of John Motson for football video game",
+          "link": "https://www.theguardian.com/media/2026/nov/25/ai-helps-resurrect-voice-john-motson-football-video-game-fc27",
+          "fonte": "The Guardian",
+          "data": "2026-11-25T15:13:10.000Z",
+          "fontes": 2
+        },
+        {
+          "titulo": "Ford unveils the GT41 as it hopes to win Le Mans again",
+          "link": "https://arstechnica.com/cars/2026/11/ford-unveils-the-gt41-as-it-hopes-to-win-le-mans-again/",
+          "fonte": "Ars Technica",
+          "data": "2026-11-26T18:00:29.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Dozens of court cases in England and Wales affected by undisclosed AI use in 2026",
+          "link": "https://www.theguardian.com/technology/2026/nov/26/dozens-of-court-cases-in-england-and-wales-affected-by-undisclosed-ai-use-in-2026",
+          "fonte": "The Guardian",
+          "data": "2026-11-26T12:19:37.000Z",
+          "fontes": 1
+        }
+      ]
+    },
+    {
+      "id": "negocios",
+      "itens": [
+        {
+          "titulo": "Faisal Islam: Why Trump's new tariffs are less of a threat",
+          "link": "https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o?at_medium=RSS&at_campaign=rss",
+          "fonte": "BBC",
+          "data": "2026-11-26T19:55:58.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "When will Poundland shops close? Five key questions answered",
+          "link": "https://www.bbc.co.uk/news/articles/c6z9d3pv93glo?at_medium=RSS&at_campaign=rss",
+          "fonte": "BBC",
+          "data": "2026-11-26T17:21:21.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "U.S. Judge rules FCC violated ABC's free speech rights to please Trump",
+          "link": "https://www.npr.org/2026/11/26/nx-s1-6000576/fcc-disney-abc-first-amendment-trump-brendan-carr",
+          "fonte": "NPR",
+          "data": "2026-11-26T05:23:18.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "How Jensen Huang's return as NVIDIA's CEO is going over in China",
+          "link": "https://www.npr.org/2026/11/25/nx-s1-6053915/how-jensen-huangs-return-as-nvidias-ceo-is-going-over-in-china",
+          "fonte": "NPR",
+          "data": "2026-11-25T23:01:09.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "New UK-EU treaty has 10-year termination clause",
+          "link": "https://www.bbc.co.uk/news/articles/c98r7p65edvgo?at_medium=RSS&at_campaign=rss",
+          "fonte": "BBC",
+          "data": "2026-11-26T15:23:17.000Z",
+          "fontes": 1
+        }
+      ]
+    },
+    {
+      "id": "politica-nacional",
+      "itens": [
+        {
+          "titulo": "Trump administration proposes new tariffs on goods from major U.S. trading partners",
+          "link": "https://www.npr.org/2026/11/26/nx-s1-6054103/trump-administration-proposes-new-tariffs-on-goods-from-major-u-s-trading-partners",
+          "fonte": "NPR",
+          "data": "2026-11-26T11:43:47.000Z",
+          "fontes": 2
+        },
+        {
+          "titulo": "Emmer: GOP should have said it wasn't 'realistic' to fix economy in 2 years",
+          "link": "https://thehill.com/homenews/house/6244906-tom-emmer-republicans-economy-messaging/",
+          "fonte": "The Hill",
+          "data": "2026-11-26T20:50:40.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Musk pledges 2 SpaceX shares per American child",
+          "link": "https://thehill.com/policy/technology/6244857-elon-musk-pledges-spacex-shares-to-american-children/",
+          "fonte": "The Hill",
+          "data": "2026-11-26T20:01:29.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Trump heads to Arizona next week for a high-stakes expansion of TSMC's computer chip factories",
+          "link": "https://www.pbs.org/newshour/politics/trump-heads-to-arizona-next-week-for-a-high-stakes-expansion-of-tsmcs-computer-chip-factories",
+          "fonte": "PBS NewsHour",
+          "data": "2026-11-26T17:52:23.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Trump calls GDP figures 'fake' and demands an investigation of Commerce Department",
+          "link": "https://www.pbs.org/newshour/politics/trump-calls-gdp-figures-fake-and-demands-an-investigation-of-commerce-department",
+          "fonte": "PBS NewsHour",
+          "data": "2026-11-26T16:36:06.000Z",
+          "fontes": 1
+        }
+      ]
+    },
+    {
+      "id": "economia",
+      "itens": [
+        {
+          "titulo": "Spain’s Pablo Hernández de Cos wins race to be next ECB president",
+          "link": "https://www.theguardian.com/business/2026/nov/26/spain-pablo-hernandez-de-cos-next-ecb-president",
+          "fonte": "The Guardian",
+          "data": "2026-11-26T17:50:54.000Z",
+          "fontes": 2
+        },
+        {
+          "titulo": "Trump alleges ‘fake’ economic figures released before US midterms but doesn’t provide evidence",
+          "link": "https://www.theguardian.com/us-news/2026/nov/26/trump-fake-economic-figures-midterms",
+          "fonte": "The Guardian",
+          "data": "2026-11-26T19:41:37.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Inflation is still hot, fueled in part by the AI boom",
+          "link": "https://www.npr.org/2026/11/25/nx-s1-6053958/inflation-is-still-hot-fueled-in-part-by-the-ai-boom",
+          "fonte": "NPR",
+          "data": "2026-11-25T22:04:36.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Liesman: Why Greenspan could bet on productivity — and Warsh needs to hike",
+          "link": "https://www.cnbc.com/2026/11/25/kevin-warsh-greenspan-fed-rates-ai-inflation.html",
+          "fonte": "CNBC",
+          "data": "2026-11-25T21:56:43.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
+          "link": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
+          "fonte": "CNBC",
+          "data": "2026-11-25T16:17:13.000Z",
+          "fontes": 1
+        }
+      ]
+    },
+    {
+      "id": "curiosidades",
+      "itens": [
+        {
+          "titulo": "5 questions facing President Trump this Thanksgiving",
+          "link": "https://thehill.com/homenews/analysis/6242015-iran-war-impact-election/",
+          "fonte": "The Hill",
+          "data": "2026-11-26T17:00:00.000Z",
+          "fontes": 1,
+          "tema": "politica-nacional"
+        },
+        {
+          "titulo": "Simon Jack: Is Poundland's US owner to blame for its collapse?",
+          "link": "https://www.bbc.co.uk/news/articles/c62klzxvyzyqo?at_medium=RSS&at_campaign=rss",
+          "fonte": "BBC",
+          "data": "2026-11-26T13:40:46.000Z",
+          "fontes": 1,
+          "tema": "negocios"
+        },
+        {
+          "titulo": "What's gone wrong at Poundland?",
+          "link": "https://www.bbc.co.uk/news/articles/cm4g10p2r0g9o?at_medium=RSS&at_campaign=rss",
+          "fonte": "BBC",
+          "data": "2026-11-26T10:15:47.000Z",
+          "fontes": 1,
+          "tema": "negocios"
+        },
+        {
+          "titulo": "How to talk AI around the Thanksgiving table",
+          "link": "https://www.npr.org/2026/11/25/nx-s1-6053216/how-to-talk-ai-around-the-thanksgiving-table",
+          "fonte": "NPR",
+          "data": "2026-11-25T21:33:59.000Z",
+          "fontes": 1,
+          "tema": "tecnologia"
+        },
+        {
+          "titulo": "‘Nobody showed up but me’: will Friendsgiving survive gen Z?",
+          "link": "https://www.theguardian.com/lifeandstyle/2026/nov/25/friendsgiving-gen-z",
+          "fonte": "The Guardian",
+          "data": "2026-11-25T14:00:29.000Z",
+          "fontes": 1,
+          "tema": "tecnologia"
+        }
+      ]
+    }
+  ],
+  "fontesComFalha": []
+}

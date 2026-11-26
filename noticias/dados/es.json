@@ -1,0 +1,212 @@
+{
+  "idioma": "es",
+  "atualizadoEm": "2026-11-26T21:06:12.143Z",
+  "categorias": [
+    {
+      "id": "tecnologia",
+      "itens": [
+        {
+          "titulo": "¿Cómo logró ‘GTA 6’ mantener a salvo su secreto más importante? Rockstar responde",
+          "link": "https://hipertextual.com/videojuegos/gta-6-rob-nelson-mayor-secreto-a-salvo-rockstar/",
+          "fonte": "Hipertextual",
+          "data": "2026-11-26T20:33:21.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Podíais elegir cualquier producto para el premio de la comunidad. El ganador ha sido el Xiaomi 17 Ultra",
+          "link": "https://www.xataka.com/telefono-movil/podiais-elegir-cualquier-producto-para-premio-comunidad-ganador-ha-sido-xiaomi-17-ultra",
+          "fonte": "Xataka",
+          "data": "2026-11-26T19:00:17.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "‘GTA 6’ rompe el récord de estreno en físico en España… con una caja sin disco",
+          "link": "https://hipertextual.com/videojuegos/gta-6-record-lanzamiento-fisico-caja-sin-disco/",
+          "fonte": "Hipertextual",
+          "data": "2026-11-26T18:45:00.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "SpaceX tiene luz verde para desplegar un millón de satélites con centros de datos: no es por la IA es por la energía",
+          "link": "https://www.xataka.com/espacio/spacex-tiene-luz-verde-para-desplegar-millon-satelites-centros-datos-no-ia-energia",
+          "fonte": "Xataka",
+          "data": "2026-11-26T17:33:44.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "WhatsApp ya permite programar mensajes: “Algunos es mejor enviarlos más tarde”",
+          "link": "https://elpais.com/tecnologia/2026-11-26/whatsapp-ya-permite-programar-mensajes-algunos-es-mejor-enviarlos-mas-tarde.html",
+          "fonte": "El País",
+          "data": "2026-11-26T11:20:32.000Z",
+          "fontes": 1
+        }
+      ]
+    },
+    {
+      "id": "negocios",
+      "itens": [
+        {
+          "titulo": "Toyota supera los 300 millones en España con su negocio de carretillas",
+          "link": "https://www.expansion.com/catalunya/2026/11/26/toyota-supera-300-millones-espana-negocio-carretillas.html",
+          "fonte": "Expansión",
+          "data": "2026-11-26T20:50:52.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Acciona estudia integrar su filial energética tras no encontrar comprador",
+          "link": "https://www.expansion.com/empresas/2026/11/26/acciona-estudia-integrar-filial-energetica-encontrar-comprador.html",
+          "fonte": "Expansión",
+          "data": "2026-11-26T19:15:49.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Digi lidera la captación de clientes pero sufre el mayor índice de fugas entre operadoras",
+          "link": "https://cincodias.elpais.com/companias/2026-11-26/digi-lidera-la-captacion-de-clientes-pero-sufre-el-mayor-indice-de-fugas-entre-operadoras.html",
+          "fonte": "Cinco Días",
+          "data": "2026-11-26T12:54:52.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "La empresa, un aliado estratégico para transformar el desplazamiento forzado en oportunidades",
+          "link": "https://elpais.com/economia/branded/especial-esg/2026-11-26/la-empresa-un-aliado-estrategico-para-transformar-el-desplazamiento-forzado-en-oportunidades.html",
+          "fonte": "Cinco Días",
+          "data": "2026-11-26T09:21:20.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "La gran distribución negociará subir hasta un 16% los salarios",
+          "link": "https://www.expansion.com/empresas/distribucion/2026/11/26/gran-distribucion-negociara-subir-16-salarios.html",
+          "fonte": "Expansión",
+          "data": "2026-11-26T18:34:38.000Z",
+          "fontes": 1
+        }
+      ]
+    },
+    {
+      "id": "politica-nacional",
+      "itens": [
+        {
+          "titulo": "Debate elecciones generales, en directo: Pedro Sánchez, Feijóo, Abascal y Ada Colau en el debate a cuatro hoy",
+          "link": "https://www.abc.es/espana/debate-elecciones-generales-directo-pedro-sanchez-feijoo-20261126201502-di.html",
+          "fonte": "ABC",
+          "data": "2026-11-26T20:43:03.000Z",
+          "fontes": 4
+        },
+        {
+          "titulo": "La juez Tardón pide al cónsul de Tetuán los mensajes que envió al embajador después de que el CNI le informara de la situación en la frontera",
+          "link": "https://www.elmundo.es/espana/2026/11/26/6b082288fc6c831a088b4574.html",
+          "fonte": "El Mundo",
+          "data": "2026-11-26T16:18:18.000Z",
+          "fontes": 2
+        },
+        {
+          "titulo": "Un juez en activo entra en “campaña” con un vídeo en redes contra el Gobierno, el PSOE y la periodista Silvia Intxaurrondo",
+          "link": "https://elpais.com/espana/2026-11-26/un-juez-en-activo-entra-en-campana-con-un-video-en-redes-contra-el-gobierno-el-psoe-y-la-periodista-silvia-intxaurrondo.html",
+          "fonte": "El País",
+          "data": "2026-11-26T15:58:24.000Z",
+          "fontes": 2
+        },
+        {
+          "titulo": "Carmena, Bescansa, Tania Sánchez y otros exdirigentes de Podemos y su entorno piden el voto para el Frente Amplio",
+          "link": "https://www.eldiario.es/politica/carmena-bescansa-tania-sanchez-exdirigentes-entorno-piden-voto-frente-amplio_1_13694266.html",
+          "fonte": "elDiario.es",
+          "data": "2026-11-26T07:35:23.000Z",
+          "fontes": 2
+        },
+        {
+          "titulo": "La declaración de Cintia Rocho ante Pedraz sobre encargo del ex juez de la cloaca para \"eliminar\" a la juez Beatriz Biedma: \"Le dije tajantemente que yo no estaba para darles palos a nadie\"",
+          "link": "https://www.elmundo.es/espana/2026/11/26/6b088d81fc6c833c0c8b45c9.html",
+          "fonte": "El Mundo",
+          "data": "2026-11-26T20:34:35.000Z",
+          "fontes": 1
+        }
+      ]
+    },
+    {
+      "id": "economia",
+      "itens": [
+        {
+          "titulo": "El salario medio aumentó un 4,7% en 2025 hasta rozar los 2.500 euros, pero con más brecha entre hombres y mujeres",
+          "link": "https://www.eldiario.es/economia/salario-medio-aumento-4-7-2025-rozar-2-500-euros-brecha-hombres-mujeres_1_13692301.html",
+          "fonte": "elDiario.es",
+          "data": "2026-11-25T13:22:46.000Z",
+          "fontes": 2
+        },
+        {
+          "titulo": "El BCE se pertrecha ante tiempos turbulentos",
+          "link": "https://cincodias.elpais.com/opinion/2026-11-26/el-bce-se-pertrecha-ante-tiempos-turbulentos.html",
+          "fonte": "El País",
+          "data": "2026-11-26T17:46:25.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Vox concreta su tijeretazo al gasto público: 112.000 millones, el doble del gasto anual en Educación",
+          "link": "https://www.eldiario.es/economia/vox-concreta-tijeretazo-gasto-publico-112-000-millones-doble-gasto-anual-educacion_1_13696579.html",
+          "fonte": "elDiario.es",
+          "data": "2026-11-26T16:34:16.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Cientos de transportistas se manifiestan frente a la Seguridad Social porque aún no ha anticipado su jubilación",
+          "link": "https://elpais.com/economia/2026-11-26/cientos-de-transportistas-se-manifiestan-frente-a-la-seguridad-social-porque-aun-no-ha-anticipado-su-jubilacion.html",
+          "fonte": "El País",
+          "data": "2026-11-26T13:55:47.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Hernández de Cos, el nuevo presidente del BCE: las ideas económicas del hombre que influirá en tu hipoteca",
+          "link": "https://www.eldiario.es/economia/hernandez-cos-nuevo-presidente-bce-paloma-tipos-ortodoxo_129_13673552.html",
+          "fonte": "elDiario.es",
+          "data": "2026-11-26T14:29:35.000Z",
+          "fontes": 1
+        }
+      ]
+    },
+    {
+      "id": "curiosidades",
+      "itens": [
+        {
+          "titulo": "Efecto BYD: por qué Brasil se ha convertido en un \"laboratorio en América Latina\" para las empresas chinas",
+          "link": "https://www.bbc.com/mundo/articles/ck1ewnv46x70o?at_medium=RSS&at_campaign=rss",
+          "fonte": "BBC Mundo",
+          "data": "2026-11-26T12:26:39.000Z",
+          "fontes": 1,
+          "tema": "negocios"
+        },
+        {
+          "titulo": "El hogar conectado: cómo disfrutar de una casa inteligente con mayor seguridad",
+          "link": "https://elpais.com/tecnologia/branded/seguridad-dia-a-dia/2026-11-26/el-hogar-conectado-como-disfrutar-de-una-casa-inteligente-con-mayor-seguridad.html",
+          "fonte": "El País",
+          "data": "2026-11-26T11:09:44.000Z",
+          "fontes": 1,
+          "tema": "tecnologia"
+        },
+        {
+          "titulo": "La España de los (casi) 50 millones: cómo la inmigración ha transformado el país en la última década y se ha convertido en tema clave de las elecciones",
+          "link": "https://www.bbc.com/mundo/articles/ckq5vgpwwq76o?at_medium=RSS&at_campaign=rss",
+          "fonte": "BBC Mundo",
+          "data": "2026-11-26T04:52:47.000Z",
+          "fontes": 1,
+          "tema": "politica-nacional"
+        },
+        {
+          "titulo": "Las claves: la derrota electoral no disuade a Trump de su empeño proteccionista",
+          "link": "https://cincodias.elpais.com/opinion/2026-11-26/las-claves-la-derrota-electoral-no-disuade-a-trump-de-su-empeno-proteccionista.html",
+          "fonte": "El País",
+          "data": "2026-11-26T04:40:00.000Z",
+          "fontes": 1,
+          "tema": "economia"
+        },
+        {
+          "titulo": "Por qué en Campanario todos van a votar y en Melilla se quedan en casa",
+          "link": "https://www.eldiario.es/politica/campanario-votar-melilla-quedan-casa_1_13685387.html",
+          "fonte": "elDiario.es",
+          "data": "2026-11-25T21:08:43.000Z",
+          "fontes": 1,
+          "tema": "politica-nacional"
+        }
+      ]
+    }
+  ],
+  "fontesComFalha": []
+}

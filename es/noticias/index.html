@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noticias — Luiz Flávio Matias</title>
+  <meta name="description" content="Las 5 noticias más relevantes del día en tecnología, gestión empresarial, política, economía y curiosidades, con enlace a las fuentes.">
+  <link rel="canonical" href="https://luizflaviomatias.github.io/es/noticias/">
+  <link rel="alternate" hreflang="pt-BR" href="https://luizflaviomatias.github.io/noticias/">
+  <link rel="alternate" hreflang="en" href="https://luizflaviomatias.github.io/en/news/">
+  <link rel="alternate" hreflang="es-ES" href="https://luizflaviomatias.github.io/es/noticias/">
+  <link rel="alternate" hreflang="x-default" href="https://luizflaviomatias.github.io/noticias/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Noticias — Luiz Flávio Matias">
+  <meta property="og:description" content="Selección diaria de las noticias más relevantes, con enlace a las fuentes.">
+  <meta property="og:url" content="https://luizflaviomatias.github.io/es/noticias/">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css?v=20261127">
+  <script src="../../assets/tema.js?v=20261127"></script>
+  <script src="../../assets/noticias.js?v=20261127" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="../">Luiz Flávio <span>Matias</span></a>
+      <nav class="nav" id="menu-principal" aria-label="Secciones">
+        <a href="../#entregas">Qué aporto</a>
+        <a href="../#trajetoria">Trayectoria</a>
+        <a href="../#competencias">Competencias</a>
+        <a href="../#projetos">Proyectos</a>
+        <a href="../#apps">Apps</a>
+        <a href="../#artigos">Publicaciones</a>
+        <a href="./" aria-current="page">Noticias</a>
+        <a href="../#contato">Contacto</a>
+      </nav>
+      <div class="top-actions">
+        <nav class="lang-switch" aria-label="Idioma">
+          <a href="../../noticias/" hreflang="pt-BR" lang="pt-BR" title="Português"><img src="../../assets/flags/br.svg" alt="Português" width="24" height="16"></a>
+          <a href="./" hreflang="es-ES" lang="es-ES" aria-current="true" title="Español"><img src="../../assets/flags/es.svg" alt="Español" width="24" height="16"></a>
+          <a href="../../en/news/" hreflang="en" lang="en" title="English"><img src="../../assets/flags/us.svg" alt="English" width="24" height="16"></a>
+        </nav>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal"><span></span></button>
+        <button class="theme-toggle" type="button" aria-label="Cambiar tema">☾</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section id="noticias" data-dados="../../noticias/dados/es.json">
+      <div class="container">
+        <p class="eyebrow">Noticias</p>
+        <h2>Lo que importa hoy, en 5 titulares por tema</h2>
+        <p class="section-intro">Una selección diaria de las noticias más relevantes publicadas por fuentes de referencia. Aquí solo aparecen el titular, la fuente y la fecha; la noticia completa se abre en el sitio original.</p>
+        <span class="badge" data-atualizado hidden></span>
+        <nav class="chips noticias-atalhos" data-atalhos aria-label="Temas"></nav>
+        <div class="grid cols-2 noticias-grade" data-grade aria-live="polite">
+          <div class="card skeleton" aria-hidden="true"></div>
+          <div class="card skeleton" aria-hidden="true"></div>
+        </div>
+        <noscript><p class="repo-status">Activa JavaScript para ver las noticias del día.</p></noscript>
+        <p class="noticias-aviso">Los titulares y enlaces pertenecen a los medios citados. La selección es automática, una vez al día, a partir de los feeds RSS públicos de cada fuente; «en 3 fuentes» significa que la misma noticia apareció en tres de ellas.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 Luiz Flávio Matias dos Santos</span>
+      <span>São Paulo, Brasil · en remoto</span>
+    </div>
+  </footer>
+</body>
+</html>

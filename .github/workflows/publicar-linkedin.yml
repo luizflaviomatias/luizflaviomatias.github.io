@@ -1,0 +1,54 @@
+name: Post diário no LinkedIn
+
+on:
+  schedule:
+    - cron: "30 10 * * *" # 07:30 em Brasília, depois das notícias das 06:00
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: publicar-linkedin
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Publicar o post do dia
+        id: post
+        run: npm run linkedin
+        env:
+          LINKEDIN_TOKEN: ${{ secrets.LINKEDIN_TOKEN }}
+          LINKEDIN_AUTOR: ${{ secrets.LINKEDIN_AUTOR }}
+          LINKEDIN_TOKEN_EXPIRA_EM: ${{ secrets.LINKEDIN_TOKEN_EXPIRA_EM }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - name: Guardar o registro do post (evita post duplicado no mesmo dia)
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add motor-linkedin/ultimo-post.json 2>/dev/null || true
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Registra o post do dia no LinkedIn"
+          git pull --rebase
+          git push
+      - name: Avisar que o token do LinkedIn vai vencer
+        if: steps.post.outputs.dias_para_vencer != '' && fromJSON(steps.post.outputs.dias_para_vencer) <= 7
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DIAS: ${{ steps.post.outputs.dias_para_vencer }}
+        run: |
+          TITULO="Token do LinkedIn vence em breve"
+          if [ -z "$(gh issue list --state open --search "$TITULO in:title" --json number --jq '.[].number')" ]; then
+            gh issue create --title "$TITULO" --body "Faltam $DIAS dia(s). No seu terminal, rode \`npm run autorizar-linkedin\` para gerar um token novo."
+          fi
