@@ -1,43 +1,43 @@
 {
   "idioma": "es",
-  "atualizadoEm": "2026-11-26T21:24:33.859Z",
+  "atualizadoEm": "2026-11-27T18:42:09.398Z",
   "categorias": [
     {
       "id": "tecnologia",
       "itens": [
         {
-          "titulo": "\"Tenemos que prepararnos para los próximos meses\": el presidente de Microsoft alerta del riesgo de más caídas ligado a la IA",
-          "link": "https://www.xataka.com/seguridad/tenemos-que-prepararnos-para-proximos-meses-presidente-microsoft-alerta-riesgo-caidas-ligado-a-ia",
+          "titulo": "EEUU se va a poner dura para evitar que las GPU de Nvidia lleguen a China. Y esta vez parece que van en serio",
+          "link": "https://www.xataka.com/robotica-e-ia/eeuu-se-va-a-poner-dura-para-evitar-que-gpu-nvidia-lleguen-a-china-esta-vez-parece-que-van-serio",
           "fonte": "Xataka",
-          "data": "2026-11-26T21:00:29.000Z",
+          "data": "2026-11-27T18:32:22.000Z",
           "fontes": 1
         },
         {
-          "titulo": "¿Cómo logró ‘GTA 6’ mantener a salvo su secreto más importante? Rockstar responde",
-          "link": "https://hipertextual.com/videojuegos/gta-6-rob-nelson-mayor-secreto-a-salvo-rockstar/",
-          "fonte": "Hipertextual",
-          "data": "2026-11-26T20:33:21.000Z",
-          "fontes": 1
-        },
-        {
-          "titulo": "Podíais elegir cualquier producto para el premio de la comunidad. El ganador ha sido el Xiaomi 17 Ultra",
-          "link": "https://www.xataka.com/telefono-movil/podiais-elegir-cualquier-producto-para-premio-comunidad-ganador-ha-sido-xiaomi-17-ultra",
+          "titulo": "Aragón pierde otro centro de datos: Capital Energy se retira de Épila y vende su conexión eléctrica a Blackstone",
+          "link": "https://www.xataka.com/energia/capital-energy-abandona-su-tercer-centro-datos-aragon-vende-150-mw-a-blackstone-para-su-proyecto-rhodes",
           "fonte": "Xataka",
-          "data": "2026-11-26T19:00:17.000Z",
+          "data": "2026-11-27T18:02:20.000Z",
           "fontes": 1
         },
         {
-          "titulo": "‘GTA 6’ rompe el récord de estreno en físico en España… con una caja sin disco",
-          "link": "https://hipertextual.com/videojuegos/gta-6-record-lanzamiento-fisico-caja-sin-disco/",
+          "titulo": "Consiguen ejecutar GTA 6 en Mac, pero hay un detalle que cambia todo",
+          "link": "https://hipertextual.com/apple/gta-6-funciona-mac-apple-silicon/",
           "fonte": "Hipertextual",
-          "data": "2026-11-26T18:45:00.000Z",
+          "data": "2026-11-27T17:23:38.000Z",
           "fontes": 1
         },
         {
-          "titulo": "WhatsApp ya permite programar mensajes: “Algunos es mejor enviarlos más tarde”",
-          "link": "https://elpais.com/tecnologia/2026-11-26/whatsapp-ya-permite-programar-mensajes-algunos-es-mejor-enviarlos-mas-tarde.html",
+          "titulo": "‘Spider-Man: Brand New Day’ vuelve a los cines con una escena eliminada que conecta con ‘Avengers: Doomsday’",
+          "link": "https://hipertextual.com/cine-television/reestreno-spider-man-brand-new-day-escena-eliminada-avengers-doomsday/",
+          "fonte": "Hipertextual",
+          "data": "2026-11-27T15:50:31.000Z",
+          "fontes": 1
+        },
+        {
+          "titulo": "Rebelión científica tras el anuncio de un colaborador de OpenAI que asegura haber resuelto el gran problema de la física",
+          "link": "https://elpais.com/ciencia/2026-11-27/rebelion-cientifica-tras-el-anuncio-de-un-colaborador-de-openai-que-asegura-haber-resuelto-el-gran-problema-de-la-fisica.html",
           "fonte": "El País",
-          "data": "2026-11-26T11:20:32.000Z",
+          "data": "2026-11-27T13:26:32.000Z",
           "fontes": 1
         }
       ]
@@ -46,38 +46,38 @@
       "id": "negocios",
       "itens": [
         {
-          "titulo": "Toyota supera los 300 millones en España con su negocio de carretillas",
-          "link": "https://www.expansion.com/catalunya/2026/11/26/toyota-supera-300-millones-espana-negocio-carretillas.html",
+          "titulo": "El Banco de Inglaterra alerta de hipotecas más altas por el impuesto especial a la banca",
+          "link": "https://www.expansion.com/empresas/banca/2026/11/27/banco-inglaterra-alerta-hipotecas-altas-impuesto-especial-banca.html",
           "fonte": "Expansión",
-          "data": "2026-11-26T20:50:52.000Z",
+          "data": "2026-11-27T18:37:40.000Z",
           "fontes": 1
         },
         {
-          "titulo": "Acciona estudia integrar su filial energética tras no encontrar comprador",
-          "link": "https://www.expansion.com/empresas/2026/11/26/acciona-estudia-integrar-filial-energetica-encontrar-comprador.html",
+          "titulo": "Una deuda de 87.000 millones de dólares pone a prueba los límites de la fortuna de la familia Ellison",
+          "link": "https://www.expansion.com/economia/financial-times/2026/11/27/deuda-87-000-millones-dolares-pone-prueba-limites-fortuna-familia-ellison.html",
           "fonte": "Expansión",
-          "data": "2026-11-26T19:15:49.000Z",
+          "data": "2026-11-27T17:31:28.000Z",
           "fontes": 1
         },
         {
-          "titulo": "Digi lidera la captación de clientes pero sufre el mayor índice de fugas entre operadoras",
-          "link": "https://cincodias.elpais.com/companias/2026-11-26/digi-lidera-la-captacion-de-clientes-pero-sufre-el-mayor-indice-de-fugas-entre-operadoras.html",
+          "titulo": "La alemana SAP planea 10.000 despidos, el 9% de su plantilla, para adaptar sus operaciones a la IA",
+          "link": "https://cincodias.elpais.com/companias/2026-11-27/la-alemana-sap-planea-10000-despidos-el-9-de-su-plantilla-para-adaptar-sus-operaciones-a-la-ia.html",
           "fonte": "Cinco Días",
-          "data": "2026-11-26T12:54:52.000Z",
+          "data": "2026-11-27T16:57:49.000Z",
           "fontes": 1
         },
         {
-          "titulo": "La empresa, un aliado estratégico para transformar el desplazamiento forzado en oportunidades",
-          "link": "https://elpais.com/economia/branded/especial-esg/2026-11-26/la-empresa-un-aliado-estrategico-para-transformar-el-desplazamiento-forzado-en-oportunidades.html",
+          "titulo": "El Santander se concentra en crecer en banca de empresas y remodela al equipo en España",
+          "link": "https://cincodias.elpais.com/companias/2026-11-27/el-santander-refuerza-su-modelo-de-empresas-en-espana-con-cambios-en-sus-directores-territoriales.html",
           "fonte": "Cinco Días",
-          "data": "2026-11-26T09:21:20.000Z",
+          "data": "2026-11-27T12:10:52.000Z",
           "fontes": 1
         },
         {
-          "titulo": "La gran distribución negociará subir hasta un 16% los salarios",
-          "link": "https://www.expansion.com/empresas/distribucion/2026/11/26/gran-distribucion-negociara-subir-16-salarios.html",
+          "titulo": "López Frade (Suzuki): \"El futuro del automóvil estaba clarísimo, hasta que llegó el futuro\"",
+          "link": "https://www.expansion.com/empresas/motor/2026/11/27/lopez-frade-suzuki-futuro-automovil-clarisimo-llego-futuro.html",
           "fonte": "Expansión",
-          "data": "2026-11-26T18:34:38.000Z",
+          "data": "2026-11-27T17:26:15.000Z",
           "fontes": 1
         }
       ]
@@ -86,38 +86,38 @@
       "id": "politica-nacional",
       "itens": [
         {
-          "titulo": "Debate elecciones generales, en directo: Pedro Sánchez, Feijóo, Abascal y Ada Colau en el debate a cuatro hoy",
+          "titulo": "Elecciones generales en España, en directo: Pedro Sánchez, Feijóo, Abascal y Ada Colau y últimas noticias del 29N hoy",
           "link": "https://www.abc.es/espana/debate-elecciones-generales-directo-pedro-sanchez-feijoo-20261126201502-di.html",
           "fonte": "ABC",
-          "data": "2026-11-26T21:03:40.000Z",
+          "data": "2026-11-27T18:21:43.000Z",
           "fontes": 4
         },
         {
-          "titulo": "La juez Tardón pide al cónsul de Tetuán los mensajes que envió al embajador después de que el CNI le informara de la situación en la frontera",
-          "link": "https://www.elmundo.es/espana/2026/11/26/6b082288fc6c831a088b4574.html",
-          "fonte": "El Mundo",
-          "data": "2026-11-26T16:18:18.000Z",
-          "fontes": 2
+          "titulo": "Feijóo se afianza tras el debate a cuatro",
+          "link": "https://www.abc.es/espana/feijoo-afianza-tras-debate-cuatro-20261126000519-nt.html",
+          "fonte": "ABC",
+          "data": "2026-11-27T17:47:12.000Z",
+          "fontes": 3
         },
         {
-          "titulo": "Un juez en activo entra en “campaña” con un vídeo en redes contra el Gobierno, el PSOE y la periodista Silvia Intxaurrondo",
-          "link": "https://elpais.com/espana/2026-11-26/un-juez-en-activo-entra-en-campana-con-un-video-en-redes-contra-el-gobierno-el-psoe-y-la-periodista-silvia-intxaurrondo.html",
+          "titulo": "¿Quién ha ganado el debate? Los analistas de EL PAÍS se decantan por Ada Colau",
+          "link": "https://elpais.com/espana/elecciones-generales/2026-11-26/quien-ha-ganado-el-debate-los-analistas-de-el-pais-se-decantan-por-ada-colau.html",
           "fonte": "El País",
-          "data": "2026-11-26T15:58:24.000Z",
+          "data": "2026-11-26T23:26:46.000Z",
           "fontes": 2
         },
         {
-          "titulo": "Carmena, Bescansa, Tania Sánchez y otros exdirigentes de Podemos y su entorno piden el voto para el Frente Amplio",
-          "link": "https://www.eldiario.es/politica/carmena-bescansa-tania-sanchez-exdirigentes-entorno-piden-voto-frente-amplio_1_13694266.html",
-          "fonte": "elDiario.es",
-          "data": "2026-11-26T07:35:23.000Z",
-          "fontes": 2
+          "titulo": "Frente Amplio apela a una “remontada épica”: dos buenas horas de debate rescatan dos semanas grises de campaña",
+          "link": "https://elpais.com/espana/elecciones-generales/2026-11-27/frente-amplio-apela-a-una-remontada-epica-dos-buenas-horas-de-debate-rescatan-dos-semanas-grises-de-campana.html",
+          "fonte": "El País",
+          "data": "2026-11-27T17:05:18.000Z",
+          "fontes": 1
         },
         {
-          "titulo": "La declaración de Cintia Rocho ante Pedraz sobre encargo del ex juez de la cloaca para \"eliminar\" a la juez Beatriz Biedma: \"Le dije tajantemente que yo no estaba para darles palos a nadie\"",
-          "link": "https://www.elmundo.es/espana/2026/11/26/6b088d81fc6c833c0c8b45c9.html",
+          "titulo": "Un testigo protegido declara a la juez que el jefe de Policía de Tetuán le anunció la oleada migratoria: \"Ya viene el asalto final al final de mes y que se vayan todos a la mierda\"",
+          "link": "https://www.elmundo.es/espana/2026/11/27/6b097a1c21efa0f4398b458d.html",
           "fonte": "El Mundo",
-          "data": "2026-11-26T20:34:35.000Z",
+          "data": "2026-11-27T15:00:55.000Z",
           "fontes": 1
         }
       ]
@@ -126,38 +126,38 @@
       "id": "economia",
       "itens": [
         {
-          "titulo": "El salario medio aumentó un 4,7% en 2025 hasta rozar los 2.500 euros, pero con más brecha entre hombres y mujeres",
-          "link": "https://www.eldiario.es/economia/salario-medio-aumento-4-7-2025-rozar-2-500-euros-brecha-hombres-mujeres_1_13692301.html",
+          "titulo": "Las pensiones subirán un 3,5% en 2027",
+          "link": "https://www.eldiario.es/economia/pensiones-subiran-3-5-2027_1_13697886.html",
           "fonte": "elDiario.es",
-          "data": "2026-11-25T13:22:46.000Z",
+          "data": "2026-11-27T08:00:18.000Z",
           "fontes": 2
         },
         {
-          "titulo": "El BCE se pertrecha ante tiempos turbulentos",
-          "link": "https://cincodias.elpais.com/opinion/2026-11-26/el-bce-se-pertrecha-ante-tiempos-turbulentos.html",
+          "titulo": "La pensión media de jubilación de los hombres ya supera los 1.800 euros al mes",
+          "link": "https://elpais.com/economia/2026-11-27/la-pension-media-de-jubilacion-de-los-hombres-ya-supera-los-1800-euros-al-mes.html",
           "fonte": "El País",
-          "data": "2026-11-26T17:46:25.000Z",
+          "data": "2026-11-27T15:00:24.000Z",
           "fontes": 1
         },
         {
-          "titulo": "Vox concreta su tijeretazo al gasto público: 112.000 millones, el doble del gasto anual en Educación",
-          "link": "https://www.eldiario.es/economia/vox-concreta-tijeretazo-gasto-publico-112-000-millones-doble-gasto-anual-educacion_1_13696579.html",
+          "titulo": "La falsa vivienda asequible del PP y la privatización de lo público",
+          "link": "https://www.eldiario.es/economia/una-casa-para-vivir/falsa-vivienda-asequible-pp-privatizacion-publico_132_13698194.html",
           "fonte": "elDiario.es",
-          "data": "2026-11-26T16:34:16.000Z",
+          "data": "2026-11-27T11:45:04.000Z",
           "fontes": 1
         },
         {
-          "titulo": "Cientos de transportistas se manifiestan frente a la Seguridad Social porque aún no ha anticipado su jubilación",
-          "link": "https://elpais.com/economia/2026-11-26/cientos-de-transportistas-se-manifiestan-frente-a-la-seguridad-social-porque-aun-no-ha-anticipado-su-jubilacion.html",
+          "titulo": "Hernández de Cos, el valor del prestigio",
+          "link": "https://elpais.com/economia/2026-11-27/hernandez-de-cos-el-valor-del-prestigio.html",
           "fonte": "El País",
-          "data": "2026-11-26T13:55:47.000Z",
+          "data": "2026-11-27T05:03:52.000Z",
           "fontes": 1
         },
         {
-          "titulo": "Hernández de Cos, el nuevo presidente del BCE: las ideas económicas del hombre que influirá en tu hipoteca",
-          "link": "https://www.eldiario.es/economia/hernandez-cos-nuevo-presidente-bce-paloma-tipos-ortodoxo_129_13673552.html",
+          "titulo": "La caída de los precios de la gasolina y el diésel frena la escalada de la inflación: se desacelera al 4,1% en noviembre",
+          "link": "https://www.eldiario.es/economia/caida-precios-gasolina-diesel-frena-escalada-inflacion-desacelera-4-1-noviembre_1_13697884.html",
           "fonte": "elDiario.es",
-          "data": "2026-11-26T14:29:35.000Z",
+          "data": "2026-11-27T08:00:01.000Z",
           "fontes": 1
         }
       ]
@@ -166,42 +166,42 @@
       "id": "curiosidades",
       "itens": [
         {
-          "titulo": "Efecto BYD: por qué Brasil se ha convertido en un \"laboratorio en América Latina\" para las empresas chinas",
-          "link": "https://www.bbc.com/mundo/articles/ck1ewnv46x70o?at_medium=RSS&at_campaign=rss",
+          "titulo": "Cómo el asesinato de una mujer hizo que la violencia machista entrara en el debate electoral en España",
+          "link": "https://www.bbc.com/mundo/articles/cxdd13p8nr3eo?at_medium=RSS&at_campaign=rss",
           "fonte": "BBC Mundo",
-          "data": "2026-11-26T12:26:39.000Z",
-          "fontes": 1,
-          "tema": "negocios"
-        },
-        {
-          "titulo": "El hogar conectado: cómo disfrutar de una casa inteligente con mayor seguridad",
-          "link": "https://elpais.com/tecnologia/branded/seguridad-dia-a-dia/2026-11-26/el-hogar-conectado-como-disfrutar-de-una-casa-inteligente-con-mayor-seguridad.html",
-          "fonte": "El País",
-          "data": "2026-11-26T11:09:44.000Z",
-          "fontes": 1,
-          "tema": "tecnologia"
-        },
-        {
-          "titulo": "La España de los (casi) 50 millones: cómo la inmigración ha transformado el país en la última década y se ha convertido en tema clave de las elecciones",
-          "link": "https://www.bbc.com/mundo/articles/ckq5vgpwwq76o?at_medium=RSS&at_campaign=rss",
-          "fonte": "BBC Mundo",
-          "data": "2026-11-26T04:52:47.000Z",
+          "data": "2026-11-27T14:56:54.000Z",
           "fontes": 1,
           "tema": "politica-nacional"
         },
         {
-          "titulo": "Las claves: la derrota electoral no disuade a Trump de su empeño proteccionista",
-          "link": "https://cincodias.elpais.com/opinion/2026-11-26/las-claves-la-derrota-electoral-no-disuade-a-trump-de-su-empeno-proteccionista.html",
+          "titulo": "¿Cómo se verá el eclipse del 2 de agosto de 2027 en tu localidad? Este mapa te lo dice municipio a municipio",
+          "link": "https://www.xataka.com/espacio/como-se-vera-eclipse-2-agosto-2027-tu-localidad-este-mapa-te-dice-municipio-a-municipio",
+          "fonte": "Xataka",
+          "data": "2026-11-27T11:51:42.000Z",
+          "fontes": 1,
+          "tema": "tecnologia"
+        },
+        {
+          "titulo": "Las claves: la caída del cigarrillo empuja a las tabaqueras a unir fuerzas",
+          "link": "https://cincodias.elpais.com/opinion/2026-11-27/las-claves-la-caida-del-cigarrillo-empuja-a-las-tabaqueras-a-unir-fuerzas.html",
           "fonte": "El País",
-          "data": "2026-11-26T04:40:00.000Z",
+          "data": "2026-11-27T04:40:00.000Z",
           "fontes": 1,
           "tema": "economia"
         },
         {
-          "titulo": "Por qué en Campanario todos van a votar y en Melilla se quedan en casa",
-          "link": "https://www.eldiario.es/politica/campanario-votar-melilla-quedan-casa_1_13685387.html",
+          "titulo": "Trabas legales y dudas sobre su efectividad: ¿se pueden gravar las remesas de los trabajadores extranjeros como propone Vox?",
+          "link": "https://elpais.com/economia/2026-11-27/trabas-legales-y-dudas-sobre-su-efectividad-se-pueden-gravar-las-remesas-de-los-trabajadores-extranjeros-como-propone-vox.html",
+          "fonte": "El País",
+          "data": "2026-11-27T04:30:01.000Z",
+          "fontes": 1,
+          "tema": "economia"
+        },
+        {
+          "titulo": "¿Qué opinan los jóvenes sobre la democracia?",
+          "link": "https://www.eldiario.es/politica/opinan-jovenes-democracia_1_13680726.html",
           "fonte": "elDiario.es",
-          "data": "2026-11-25T21:08:43.000Z",
+          "data": "2026-11-27T00:46:15.000Z",
           "fontes": 1,
           "tema": "politica-nacional"
         }
